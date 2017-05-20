@@ -1,0 +1,560 @@
+[
+  {
+    "id": 1,
+    "title": "A New Hope",
+    "releaseDate": "1977-05-25",
+    "director":"George Lucas",
+    "chronologicalOrder": 5,
+    "personalOrder": 5,
+    "kind": "SAGA",
+    "mainCharacters": [
+      {
+        "name": "Luke Skywalker",
+        "portrayedBy": "Mark Hamill",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Princess Leia",
+        "portrayedBy": "Carrie Fisher",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Han Solo",
+        "portrayedBy": "Harrison Ford",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "C3PO",
+        "portrayedBy": "Anthony Daniels",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "R2D2",
+        "portrayedBy": "Kenny Baker",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Chewbacca",
+        "portrayedBy": "Peter Mayhew",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Grand Moff Tarkin",
+        "portrayedBy": "Peter Cushing",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Obi-Wan Kenobi",
+        "portrayedBy": "Alec Guinness",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Darth Vader",
+        "portrayedBy": "David Prowse",
+        "forceAlignment": "DARK_SIDE"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "title": "The Empire Strikes Back",
+    "releaseDate": "1980-05-21",
+    "director":"Irvin Kershner",
+    "chronologicalOrder": 6,
+    "personalOrder": 1,
+    "kind": "SAGA",
+    "mainCharacters": [
+      {
+        "name": "Luke Skywalker",
+        "portrayedBy": "Mark Hamill",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Princess Leia",
+        "portrayedBy": "Carrie Fisher",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Han Solo",
+        "portrayedBy": "Harrison Ford",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "C3PO",
+        "portrayedBy": "Anthony Daniels",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "R2D2",
+        "portrayedBy": "Kenny Baker",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Chewbacca",
+        "portrayedBy": "Peter Mayhew",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Obi-Wan Kenobi",
+        "portrayedBy": "Alec Guinness",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Darth Vader",
+        "portrayedBy": "David Prowse",
+        "forceAlignment": "DARK_SIDE"
+      },
+      {
+        "name": "Yoda",
+        "portrayedBy": "Frank Oz",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Lando Calrissian",
+        "portrayedBy": "Billy Dee Williams",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Boba Fett",
+        "portrayedBy": "Jeremy Bulloch",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Darth Sidious",
+        "portrayedBy": "Ian McDiarmid",
+        "forceAlignment": "DARK_SIDE"
+      },
+      {
+        "name": "Wicket",
+        "portrayedBy": "Warwick Davis",
+        "forceAlignment": "WITHOUT_FORCE"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "title": "The Return of the Jedi",
+    "releaseDate": "1983-05-25",
+    "director":"Richard Marquand",
+    "chronologicalOrder": 7,
+    "personalOrder": 4,
+    "kind": "SAGA",
+    "mainCharacters": [
+      {
+        "name": "Luke Skywalker",
+        "portrayedBy": "Mark Hamill",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Princess Leia",
+        "portrayedBy": "Carrie Fisher",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Han Solo",
+        "portrayedBy": "Harrison Ford",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "C3PO",
+        "portrayedBy": "Anthony Daniels",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "R2D2",
+        "portrayedBy": "Kenny Baker",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Chewbacca",
+        "portrayedBy": "Peter Mayhew",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Obi-Wan Kenobi",
+        "portrayedBy": "Alec Guinness",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Darth Vader",
+        "portrayedBy": "David Prowse",
+        "forceAlignment": "DARK_SIDE"
+      },
+      {
+        "name": "Yoda",
+        "portrayedBy": "Frank Oz",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Lando Calrissian",
+        "portrayedBy": "Billy Dee Williams",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Boba Fett",
+        "portrayedBy": "Jeremy Bulloch",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Darth Sidious",
+        "portrayedBy": "Ian McDiarmid",
+        "forceAlignment": "DARK_SIDE"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "title": "The Phantom Manace",
+    "releaseDate": "1999-05-19",
+    "director":"George Lucas",
+    "chronologicalOrder": 1,
+    "personalOrder": 7,
+    "kind": "SAGA",
+    "mainCharacters": [
+      {
+        "name": "Obi-Wan Kenobi",
+        "portrayedBy": "Ewan McGregor",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Qui-Gon Jin",
+        "portrayedBy": "Liam Neeson",
+        "forceAlignment": "GRAY_SIDE"
+      },
+      {
+        "name": "Jar Jar Binks",
+        "portrayedBy": "Ahmed Best",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Queen Amidala",
+        "portrayedBy": "Natalie Portman",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Anakin Skywalker",
+        "portrayedBy": "Jake Lloyd",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "C3PO",
+        "portrayedBy": "Anthony Daniels",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "R2D2",
+        "portrayedBy": "Kenny Baker",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Senator Palpatine",
+        "portrayedBy": "Ian McDiarmid",
+        "forceAlignment": "DARK_SIDE"
+      },
+      {
+        "name": "Yoda",
+        "portrayedBy": "Frank Oz",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Mace Windu",
+        "portrayedBy": "Samuel L Jackson",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Darth Maul",
+        "portrayedBy": "Ray Park",
+        "forceAlignment": "DARK_SIDE"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "title": "The Attack of the Clones",
+    "releaseDate": "2002-05-16",
+    "director":"George Lucas",
+    "chronologicalOrder": 2,
+    "personalOrder": 8,
+    "kind": "SAGA",
+    "mainCharacters": [
+      {
+        "name": "Obi-Wan Kenobi",
+        "portrayedBy": "Ewan McGregor",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Queen Amidala",
+        "portrayedBy": "Natalie Portman",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Anakin Skywalker",
+        "portrayedBy": "Hayden Christensen",
+        "forceAlignment": "DARK_SIDE"
+      },
+      {
+        "name": "C3PO",
+        "portrayedBy": "Anthony Daniels",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "R2D2",
+        "portrayedBy": "Kenny Baker",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Senator Palpatine",
+        "portrayedBy": "Ian McDiarmid",
+        "forceAlignment": "DARK_SIDE"
+      },
+      {
+        "name": "Yoda",
+        "portrayedBy": "Frank Oz",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Mace Windu",
+        "portrayedBy": "Samuel L Jackson",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Darth Tyranus",
+        "portrayedBy": "Christopher Lee",
+        "forceAlignment": "DARK_SIDE"
+      },
+      {
+        "name": "Jango Fett",
+        "portrayedBy": "Temuera Morrison",
+        "forceAlignment": "WITHOUT_FORCE"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "title": "The Revenge of the Sith",
+    "releaseDate": "2005-05-19",
+    "director":"George Lucas",
+    "chronologicalOrder": 3,
+    "personalOrder": 6,
+    "kind": "SAGA",
+    "mainCharacters": [
+      {
+        "name": "Obi-Wan Kenobi",
+        "portrayedBy": "Ewan McGregor",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Queen Amidala",
+        "portrayedBy": "Natalie Portman",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Anakin Skywalker",
+        "portrayedBy": "Hayden Christensen",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Darth Vader",
+        "portrayedBy": "Hayden Christensen",
+        "forceAlignment": "DARK_SIDE"
+      },
+      {
+        "name": "C3PO",
+        "portrayedBy": "Anthony Daniels",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "R2D2",
+        "portrayedBy": "Kenny Baker",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Darth Sidious",
+        "portrayedBy": "Ian McDiarmid",
+        "forceAlignment": "DARK_SIDE"
+      },
+      {
+        "name": "Yoda",
+        "portrayedBy": "Frank Oz",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Mace Windu",
+        "portrayedBy": "Samuel L Jackson",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Darth Tyranus",
+        "portrayedBy": "Christopher Lee",
+        "forceAlignment": "DARK_SIDE"
+      },
+      {
+        "name": "Bail Organa",
+        "portrayedBy": "Jimmy Smits",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Chewbacca",
+        "portrayedBy": "Peter Mayhew",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "General Grievous",
+        "portrayedBy": "Matthew Wood",
+        "forceAlignment": "WITHOUT_FORCE"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "title": "The Force Awakens",
+    "releaseDate": "2005-12-18",
+    "director":"J.J. Abrams",
+    "chronologicalOrder": 7,
+    "personalOrder": 4,
+    "kind": "SAGA",
+    "mainCharacters": [
+      {
+        "name": "Kylo Ren",
+        "portrayedBy": "Adam Driver",
+        "forceAlignment": "DARK_SIDE"
+      },
+      {
+        "name": "Rey",
+        "portrayedBy": "Daisy Ridley",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "BB-8",
+        "portrayedBy": "None",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Finn",
+        "portrayedBy": "John Boyega",
+        "forceAlignment": "UNKNOWN"
+      },
+      {
+        "name": "Poe Dameron",
+        "portrayedBy": "Oscar Isaac",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Maz Kanata",
+        "portrayedBy": "Lupita Nyong'o",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Supreme Leader Snoke",
+        "portrayedBy": "Andy Serkis",
+        "forceAlignment": "DARK_SIDE"
+      },
+      {
+        "name": "General Hux",
+        "portrayedBy": "Domhnall Gleeson",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Captain Phasma",
+        "portrayedBy": "Gwendoline Christie",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Luke Skywalker",
+        "portrayedBy": "Mark Hamill",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "General Leia Organa",
+        "portrayedBy": "Carrie Fisher",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Han Solo",
+        "portrayedBy": "Harrison Ford",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "C3PO",
+        "portrayedBy": "Anthony Daniels",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "R2D2",
+        "portrayedBy": "Kenny Baker",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Chewbacca",
+        "portrayedBy": "Peter Mayhew",
+        "forceAlignment": "WITHOUT_FORCE"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "title": "Rogue One",
+    "releaseDate": "2016-12-16",
+    "director":"Gareth Edwards",
+    "chronologicalOrder": 4,
+    "personalOrder": 2,
+    "kind": "SPIN_OFF",
+    "mainCharacters": [
+      {
+        "name": "Jyn Erso",
+        "portrayedBy": "Felicity Jones",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Cassian Andor",
+        "portrayedBy": "Diego Luna",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Orson Krennic",
+        "portrayedBy": "Ben Mendelsohn",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Chirrut Îmue",
+        "portrayedBy": "Donnie Yen",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Galen Erso",
+        "portrayedBy": "Mads Mikkelsen",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "K-2SO",
+        "portrayedBy": "Alan Tudyk",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Bodhi Rook",
+        "portrayedBy": "Riz Ahmed",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Baze Malbus",
+        "portrayedBy": "Jiang Wen",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Saw Gerrera",
+        "portrayedBy": "Forest Whitaker",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Princess Leia",
+        "portrayedBy": "Carrie Fisher",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "Darth Vader",
+        "portrayedBy": "Daniel Naprous",
+        "forceAlignment": "DARK_SIDE"
+      }
+    ]
+  }
+]
