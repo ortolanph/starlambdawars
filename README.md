@@ -13,6 +13,7 @@ A java8 lambda introduction using star wars movies information.
 * Directors x Episodes
 * Episode x Characters
 * Force Alignment x Characters
+* Kinds of Ordering x Episode Ordering
 
 ## ```sort```
 
