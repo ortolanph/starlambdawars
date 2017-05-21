@@ -39,14 +39,4 @@ public class DataLoader {
     private URI getFileURI() throws URISyntaxException {
         return getClass().getResource("/all_star_wars_movies.json").toURI();
     }
-
-    public static void main(String[] args) {
-        DataLoader loader = new DataLoader();
-
-        try {
-            loader.loadMovies();
-        } catch (IOException e) {
-            e.printStackTrace();
-        }
-    }
 }
