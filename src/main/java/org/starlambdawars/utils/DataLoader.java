@@ -31,9 +31,7 @@ public class DataLoader {
 
         List<StarWarsMovie> movies  = mapper.readValue(json, new TypeReference<List<StarWarsMovie>>(){});
 
-        System.out.println(movies);
-
-        return null;
+        return movies;
     }
 
     private URI getFileURI() throws URISyntaxException {

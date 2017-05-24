@@ -1,5 +1,7 @@
 package org.starlambdawars.beans;
 
+import java.util.Objects;
+
 /**
  * Star Wars Character Bean.
  *
@@ -15,12 +17,12 @@ public class StarWarsCharacter {
         this.name = name;
     }
 
-    public String getPortrayedBy() {
-        return portrayedBy;
+    public String getPlayedBy() {
+        return playedBy;
     }
 
-    public void setPortrayedBy(String portrayedBy) {
-        this.portrayedBy = portrayedBy;
+    public void setPlayedBy(String playedBy) {
+        this.playedBy = playedBy;
     }
 
     public ForceAlignment getForceAlignment() {
@@ -35,13 +37,26 @@ public class StarWarsCharacter {
     public String toString() {
         final StringBuilder sb = new StringBuilder("StarWarsCharacter{");
         sb.append("name='").append(name).append('\'');
-        sb.append(", portrayedBy='").append(portrayedBy).append('\'');
+        sb.append(", playedBy='").append(playedBy).append('\'');
         sb.append(", forceAlignment=").append(forceAlignment);
         sb.append('}');
         return sb.toString();
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        StarWarsCharacter that = (StarWarsCharacter) o;
+        return Objects.equals(name, that.name);
+    }
+
+    @Override
+    public int hashCode() {
+        return Objects.hash(name);
+    }
+
     private String name;
-    private String portrayedBy;
+    private String playedBy;
     private ForceAlignment forceAlignment;
 }

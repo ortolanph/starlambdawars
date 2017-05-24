@@ -10,47 +10,47 @@
     "mainCharacters": [
       {
         "name": "Luke Skywalker",
-        "portrayedBy": "Mark Hamill",
+        "playedBy": "Mark Hamill",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Princess Leia",
-        "portrayedBy": "Carrie Fisher",
+        "playedBy": "Carrie Fisher",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Han Solo",
-        "portrayedBy": "Harrison Ford",
+        "playedBy": "Harrison Ford",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "C3PO",
-        "portrayedBy": "Anthony Daniels",
+        "playedBy": "Anthony Daniels",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "R2D2",
-        "portrayedBy": "Kenny Baker",
+        "playedBy": "Kenny Baker",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Chewbacca",
-        "portrayedBy": "Peter Mayhew",
+        "playedBy": "Peter Mayhew",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Grand Moff Tarkin",
-        "portrayedBy": "Peter Cushing",
+        "playedBy": "Peter Cushing",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Obi-Wan Kenobi",
-        "portrayedBy": "Alec Guinness",
+        "playedBy": "Alec Guinness",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Darth Vader",
-        "portrayedBy": "David Prowse",
+        "playedBy": "David Prowse",
         "forceAlignment": "DARK_SIDE"
       }
     ]
@@ -66,67 +66,67 @@
     "mainCharacters": [
       {
         "name": "Luke Skywalker",
-        "portrayedBy": "Mark Hamill",
+        "playedBy": "Mark Hamill",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Princess Leia",
-        "portrayedBy": "Carrie Fisher",
+        "playedBy": "Carrie Fisher",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Han Solo",
-        "portrayedBy": "Harrison Ford",
+        "playedBy": "Harrison Ford",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "C3PO",
-        "portrayedBy": "Anthony Daniels",
+        "playedBy": "Anthony Daniels",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "R2D2",
-        "portrayedBy": "Kenny Baker",
+        "playedBy": "Kenny Baker",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Chewbacca",
-        "portrayedBy": "Peter Mayhew",
+        "playedBy": "Peter Mayhew",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Obi-Wan Kenobi",
-        "portrayedBy": "Alec Guinness",
+        "playedBy": "Alec Guinness",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Darth Vader",
-        "portrayedBy": "David Prowse",
+        "playedBy": "David Prowse",
         "forceAlignment": "DARK_SIDE"
       },
       {
         "name": "Yoda",
-        "portrayedBy": "Frank Oz",
+        "playedBy": "Frank Oz",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Lando Calrissian",
-        "portrayedBy": "Billy Dee Williams",
+        "playedBy": "Billy Dee Williams",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Boba Fett",
-        "portrayedBy": "Jeremy Bulloch",
+        "playedBy": "Jeremy Bulloch",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Darth Sidious",
-        "portrayedBy": "Ian McDiarmid",
+        "playedBy": "Ian McDiarmid",
         "forceAlignment": "DARK_SIDE"
       },
       {
         "name": "Wicket",
-        "portrayedBy": "Warwick Davis",
+        "playedBy": "Warwick Davis",
         "forceAlignment": "WITHOUT_FORCE"
       }
     ]
@@ -142,62 +142,62 @@
     "mainCharacters": [
       {
         "name": "Luke Skywalker",
-        "portrayedBy": "Mark Hamill",
+        "playedBy": "Mark Hamill",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Princess Leia",
-        "portrayedBy": "Carrie Fisher",
+        "playedBy": "Carrie Fisher",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Han Solo",
-        "portrayedBy": "Harrison Ford",
+        "playedBy": "Harrison Ford",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "C3PO",
-        "portrayedBy": "Anthony Daniels",
+        "playedBy": "Anthony Daniels",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "R2D2",
-        "portrayedBy": "Kenny Baker",
+        "playedBy": "Kenny Baker",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Chewbacca",
-        "portrayedBy": "Peter Mayhew",
+        "playedBy": "Peter Mayhew",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Obi-Wan Kenobi",
-        "portrayedBy": "Alec Guinness",
+        "playedBy": "Alec Guinness",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Darth Vader",
-        "portrayedBy": "David Prowse",
+        "playedBy": "David Prowse",
         "forceAlignment": "DARK_SIDE"
       },
       {
         "name": "Yoda",
-        "portrayedBy": "Frank Oz",
+        "playedBy": "Frank Oz",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Lando Calrissian",
-        "portrayedBy": "Billy Dee Williams",
+        "playedBy": "Billy Dee Williams",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Boba Fett",
-        "portrayedBy": "Jeremy Bulloch",
+        "playedBy": "Jeremy Bulloch",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Darth Sidious",
-        "portrayedBy": "Ian McDiarmid",
+        "playedBy": "Ian McDiarmid",
         "forceAlignment": "DARK_SIDE"
       }
     ]
@@ -213,57 +213,57 @@
     "mainCharacters": [
       {
         "name": "Obi-Wan Kenobi",
-        "portrayedBy": "Ewan McGregor",
+        "playedBy": "Ewan McGregor",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Qui-Gon Jin",
-        "portrayedBy": "Liam Neeson",
+        "playedBy": "Liam Neeson",
         "forceAlignment": "GRAY_SIDE"
       },
       {
         "name": "Jar Jar Binks",
-        "portrayedBy": "Ahmed Best",
+        "playedBy": "Ahmed Best",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Queen Amidala",
-        "portrayedBy": "Natalie Portman",
+        "playedBy": "Natalie Portman",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Anakin Skywalker",
-        "portrayedBy": "Jake Lloyd",
+        "playedBy": "Jake Lloyd",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "C3PO",
-        "portrayedBy": "Anthony Daniels",
+        "playedBy": "Anthony Daniels",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "R2D2",
-        "portrayedBy": "Kenny Baker",
+        "playedBy": "Kenny Baker",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Senator Palpatine",
-        "portrayedBy": "Ian McDiarmid",
+        "playedBy": "Ian McDiarmid",
         "forceAlignment": "DARK_SIDE"
       },
       {
         "name": "Yoda",
-        "portrayedBy": "Frank Oz",
+        "playedBy": "Frank Oz",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Mace Windu",
-        "portrayedBy": "Samuel L Jackson",
+        "playedBy": "Samuel L Jackson",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Darth Maul",
-        "portrayedBy": "Ray Park",
+        "playedBy": "Ray Park",
         "forceAlignment": "DARK_SIDE"
       }
     ]
@@ -279,52 +279,52 @@
     "mainCharacters": [
       {
         "name": "Obi-Wan Kenobi",
-        "portrayedBy": "Ewan McGregor",
+        "playedBy": "Ewan McGregor",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Queen Amidala",
-        "portrayedBy": "Natalie Portman",
+        "playedBy": "Natalie Portman",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Anakin Skywalker",
-        "portrayedBy": "Hayden Christensen",
+        "playedBy": "Hayden Christensen",
         "forceAlignment": "DARK_SIDE"
       },
       {
         "name": "C3PO",
-        "portrayedBy": "Anthony Daniels",
+        "playedBy": "Anthony Daniels",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "R2D2",
-        "portrayedBy": "Kenny Baker",
+        "playedBy": "Kenny Baker",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Senator Palpatine",
-        "portrayedBy": "Ian McDiarmid",
+        "playedBy": "Ian McDiarmid",
         "forceAlignment": "DARK_SIDE"
       },
       {
         "name": "Yoda",
-        "portrayedBy": "Frank Oz",
+        "playedBy": "Frank Oz",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Mace Windu",
-        "portrayedBy": "Samuel L Jackson",
+        "playedBy": "Samuel L Jackson",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Darth Tyranus",
-        "portrayedBy": "Christopher Lee",
+        "playedBy": "Christopher Lee",
         "forceAlignment": "DARK_SIDE"
       },
       {
         "name": "Jango Fett",
-        "portrayedBy": "Temuera Morrison",
+        "playedBy": "Temuera Morrison",
         "forceAlignment": "WITHOUT_FORCE"
       }
     ]
@@ -340,67 +340,67 @@
     "mainCharacters": [
       {
         "name": "Obi-Wan Kenobi",
-        "portrayedBy": "Ewan McGregor",
+        "playedBy": "Ewan McGregor",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Queen Amidala",
-        "portrayedBy": "Natalie Portman",
+        "playedBy": "Natalie Portman",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Anakin Skywalker",
-        "portrayedBy": "Hayden Christensen",
+        "playedBy": "Hayden Christensen",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Darth Vader",
-        "portrayedBy": "Hayden Christensen",
+        "playedBy": "Hayden Christensen",
         "forceAlignment": "DARK_SIDE"
       },
       {
         "name": "C3PO",
-        "portrayedBy": "Anthony Daniels",
+        "playedBy": "Anthony Daniels",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "R2D2",
-        "portrayedBy": "Kenny Baker",
+        "playedBy": "Kenny Baker",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Darth Sidious",
-        "portrayedBy": "Ian McDiarmid",
+        "playedBy": "Ian McDiarmid",
         "forceAlignment": "DARK_SIDE"
       },
       {
         "name": "Yoda",
-        "portrayedBy": "Frank Oz",
+        "playedBy": "Frank Oz",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Mace Windu",
-        "portrayedBy": "Samuel L Jackson",
+        "playedBy": "Samuel L Jackson",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Darth Tyranus",
-        "portrayedBy": "Christopher Lee",
+        "playedBy": "Christopher Lee",
         "forceAlignment": "DARK_SIDE"
       },
       {
         "name": "Bail Organa",
-        "portrayedBy": "Jimmy Smits",
+        "playedBy": "Jimmy Smits",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Chewbacca",
-        "portrayedBy": "Peter Mayhew",
+        "playedBy": "Peter Mayhew",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "General Grievous",
-        "portrayedBy": "Matthew Wood",
+        "playedBy": "Matthew Wood",
         "forceAlignment": "WITHOUT_FORCE"
       }
     ]
@@ -416,77 +416,77 @@
     "mainCharacters": [
       {
         "name": "Kylo Ren",
-        "portrayedBy": "Adam Driver",
+        "playedBy": "Adam Driver",
         "forceAlignment": "DARK_SIDE"
       },
       {
         "name": "Rey",
-        "portrayedBy": "Daisy Ridley",
+        "playedBy": "Daisy Ridley",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "BB-8",
-        "portrayedBy": "None",
+        "playedBy": "None",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Finn",
-        "portrayedBy": "John Boyega",
+        "playedBy": "John Boyega",
         "forceAlignment": "UNKNOWN"
       },
       {
         "name": "Poe Dameron",
-        "portrayedBy": "Oscar Isaac",
+        "playedBy": "Oscar Isaac",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Maz Kanata",
-        "portrayedBy": "Lupita Nyong'o",
+        "playedBy": "Lupita Nyong'o",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Supreme Leader Snoke",
-        "portrayedBy": "Andy Serkis",
+        "playedBy": "Andy Serkis",
         "forceAlignment": "DARK_SIDE"
       },
       {
         "name": "General Hux",
-        "portrayedBy": "Domhnall Gleeson",
+        "playedBy": "Domhnall Gleeson",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Captain Phasma",
-        "portrayedBy": "Gwendoline Christie",
+        "playedBy": "Gwendoline Christie",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Luke Skywalker",
-        "portrayedBy": "Mark Hamill",
+        "playedBy": "Mark Hamill",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "General Leia Organa",
-        "portrayedBy": "Carrie Fisher",
+        "playedBy": "Carrie Fisher",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Han Solo",
-        "portrayedBy": "Harrison Ford",
+        "playedBy": "Harrison Ford",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "C3PO",
-        "portrayedBy": "Anthony Daniels",
+        "playedBy": "Anthony Daniels",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "R2D2",
-        "portrayedBy": "Kenny Baker",
+        "playedBy": "Kenny Baker",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Chewbacca",
-        "portrayedBy": "Peter Mayhew",
+        "playedBy": "Peter Mayhew",
         "forceAlignment": "WITHOUT_FORCE"
       }
     ]
@@ -502,57 +502,57 @@
     "mainCharacters": [
       {
         "name": "Jyn Erso",
-        "portrayedBy": "Felicity Jones",
+        "playedBy": "Felicity Jones",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Cassian Andor",
-        "portrayedBy": "Diego Luna",
+        "playedBy": "Diego Luna",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Orson Krennic",
-        "portrayedBy": "Ben Mendelsohn",
+        "playedBy": "Ben Mendelsohn",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Chirrut Îmue",
-        "portrayedBy": "Donnie Yen",
+        "playedBy": "Donnie Yen",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Galen Erso",
-        "portrayedBy": "Mads Mikkelsen",
+        "playedBy": "Mads Mikkelsen",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "K-2SO",
-        "portrayedBy": "Alan Tudyk",
+        "playedBy": "Alan Tudyk",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Bodhi Rook",
-        "portrayedBy": "Riz Ahmed",
+        "playedBy": "Riz Ahmed",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Baze Malbus",
-        "portrayedBy": "Jiang Wen",
+        "playedBy": "Jiang Wen",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Saw Gerrera",
-        "portrayedBy": "Forest Whitaker",
+        "playedBy": "Forest Whitaker",
         "forceAlignment": "WITHOUT_FORCE"
       },
       {
         "name": "Princess Leia",
-        "portrayedBy": "Carrie Fisher",
+        "playedBy": "Carrie Fisher",
         "forceAlignment": "LIGHT_SIDE"
       },
       {
         "name": "Darth Vader",
-        "portrayedBy": "Daniel Naprous",
+        "playedBy": "Daniel Naprous",
         "forceAlignment": "DARK_SIDE"
       }
     ]

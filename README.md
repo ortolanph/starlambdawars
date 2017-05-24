@@ -4,16 +4,15 @@ A java8 lambda introduction using star wars movies information.
 ## ```filter```
 
 * Work with predicate
+* Find movies by director
+* Find movies by date
+* Find movies beetween two dates
 * Find movies by character
-* Find movies by actor
 * Multiple predicates
 
 ## ```map```
 
-* Directors x Episodes
-* Episode x Characters
-* Force Alignment x Characters
-* Kinds of Ordering x Episode Ordering
+* TBD
 
 ## ```sort```
 
