@@ -1,7 +1,5 @@
 package org.starlambdawars.sorter;
 
-import org.starlambdawars.beans.StarWarsMovie;
-
 import java.io.IOException;
 
 public class StarWarsMovieSorterExample {
@@ -13,28 +11,28 @@ public class StarWarsMovieSorterExample {
         System.out.println("--------");
         sorter
                 .idOrderSorting()
-                .forEach(StarWarsMovie::getTitle);
+                .forEach(m -> System.out.println(m.getTitle()));
         System.out.println();
 
         System.out.println("Chronological Order");
         System.out.println("-------------------");
         sorter
                 .chronologicalOrderSorting()
-                .forEach(StarWarsMovie::getTitle);
+                .forEach(m -> System.out.println(m.getTitle()));
         System.out.println();
 
         System.out.println("Personal Order");
         System.out.println("--------------");
         sorter
                 .personalOrderSorting()
-                .forEach(StarWarsMovie::getTitle);
+                .forEach(m -> System.out.println(m.getTitle()));
         System.out.println();
 
         System.out.println("Release Order");
         System.out.println("-------------");
         sorter
                 .releaseOrderSorting()
-                .forEach(StarWarsMovie::getTitle);
+                .forEach(m -> System.out.println(m.getTitle()));
         System.out.println();
     }
 
