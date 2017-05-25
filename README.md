@@ -10,11 +10,12 @@ A java8 lambda introduction using star wars movies information.
 * Find movies by character
 * Multiple predicates
 
-## ```map```
+## ```maps```
 
 * What are maps?
-* Force Alignments x Characters
-* Movie Kinds x Movie Titles
+* All titles
+* All directors
+* All characters
 
 ## ```sort```
 
@@ -23,6 +24,12 @@ A java8 lambda introduction using star wars movies information.
 * Sort by Release Date
 * Sort by Chronological Order
 * Sort by Custom Order
+
+## ```collectors```
+
+* What are collectors?
+* Force Alignments x Characters
+* Movie Kinds x Movie Titles
 
 ## Copyright Information
 
