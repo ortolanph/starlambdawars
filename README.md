@@ -12,7 +12,9 @@ A java8 lambda introduction using star wars movies information.
 
 ## ```map```
 
-* TBD
+* What are maps?
+* Force Alignments x Characters
+* Movie Kinds x Movie Titles
 
 ## ```sort```
 
