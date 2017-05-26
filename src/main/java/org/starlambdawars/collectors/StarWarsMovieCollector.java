@@ -8,10 +8,9 @@ import org.starlambdawars.mapper.StarWarsMovieMapper;
 import org.starlambdawars.utils.DataLoader;
 
 import java.io.IOException;
-import java.util.Collections;
+import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.function.Function;
 import java.util.stream.Collectors;
 import java.util.stream.Stream;
 
@@ -23,36 +22,33 @@ public class StarWarsMovieCollector {
         mapper = new StarWarsMovieMapper();
     }
 
-//    public Map<ForceAlignment, List<StarWarsCharacter>> mapForceByCharacters() {
-//        List<StarWarsCharacter> characters = mapper.allCharacters();
-//
-//        return characters
-//                .stream()
-//                .map(a -> a.getForceAlignment())
-//                .collect(
-//                        Collectors.toMap(
-//                                ,
-//                                findByForceAlignment(a, characters)
-//                        )
-//                );
-//    }
-//
-//    public Map<MovieType, List<StarWarsMovie>> mapTypeByMovies() {
-//        return movies
-//                .stream()
-//                .map(k -> k.getKind())
-//                .collect(
-//                        Collectors.toMap(
-//                                Function.identity(),
-//                                findByKind(k, movies)
-//                        )
-//                );
-//    }
+    public Map<ForceAlignment, List<String>> mapForceByCharacters() {
+        List<StarWarsCharacter> characters = mapper.allCharacters();
 
-    private List<StarWarsCharacter> findByForceAlignment(ForceAlignment alignment, List<StarWarsCharacter> characters) {
+        Map<ForceAlignment, List<String>> result = new HashMap<>();
+
+        Stream
+                .of(ForceAlignment.values())
+                .forEach(a -> result.put(a, findByForceAlignment(a, characters)));
+
+        return result;
+    }
+
+    public Map<MovieType, List<String>> mapTypeByMovies() {
+        Map<MovieType, List<String>> result = new HashMap<>();
+
+        Stream
+                .of(MovieType.values())
+                .forEach(k -> result.put(k, findByKind(k, movies)));
+
+        return result;
+    }
+
+    private List<String> findByForceAlignment(ForceAlignment alignment, List<StarWarsCharacter> characters) {
         return characters
                 .stream()
                 .filter(c -> c.getForceAlignment().equals(alignment))
+                .map(c -> c.getName())
                 .collect(Collectors.toList());
     }
 
