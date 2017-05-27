@@ -29,6 +29,8 @@ Run with:
 * All directors
 * All characters
 
+Run with:
+
 * ```make mapper```
 
 ## ```sort```
@@ -39,6 +41,8 @@ Run with:
 * Sort by Chronological Order
 * Sort by Custom Order
 
+Run with:
+
 * ```make order```
 * ```make sorter```
 
@@ -47,6 +51,8 @@ Run with:
 * What are collectors?
 * Force Alignments x Characters
 * Movie Kinds x Movie Titles
+
+Run with:
 
 * ```make collector```
 
