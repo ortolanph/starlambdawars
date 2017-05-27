@@ -1,6 +1,13 @@
 # starlambdawars
 A java8 lambda introduction using star wars movies information.
 
+## Compile and assemble
+
+* Run ```make compile``` to build
+* Run ```make assemble``` to build with dependencies.
+
+It was developed using Java 8 and Maven 3.5.0.
+
 ## ```filter```
 
 * Work with predicate
@@ -10,12 +17,19 @@ A java8 lambda introduction using star wars movies information.
 * Find movies by character
 * Multiple predicates
 
+Run with:
+
+* ```make filter```
+* ```make finder```
+
 ## ```maps```
 
 * What are maps?
 * All titles
 * All directors
 * All characters
+
+* ```make mapper```
 
 ## ```sort```
 
@@ -25,11 +39,20 @@ A java8 lambda introduction using star wars movies information.
 * Sort by Chronological Order
 * Sort by Custom Order
 
+* ```make order```
+* ```make sorter```
+
 ## ```collectors```
 
 * What are collectors?
 * Force Alignments x Characters
 * Movie Kinds x Movie Titles
+
+* ```make collector```
+
+## Cleaning
+
+* Run ```make clean``` or simply ```make```.
 
 ## Copyright Information
 
