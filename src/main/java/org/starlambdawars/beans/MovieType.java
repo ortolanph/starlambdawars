@@ -6,8 +6,12 @@ package org.starlambdawars.beans;
  * @author Paulo Henrique Ortolan
  */
 public enum MovieType {
-    /** Saga movies */
+    /**
+     * Saga movies
+     */
     SAGA,
-    /** Spin-off movies */
+    /**
+     * Spin-off movies
+     */
     SPIN_OFF;
 }

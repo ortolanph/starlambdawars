@@ -58,12 +58,12 @@ public class StarWarsMovie {
         this.personalOrder = personalOrder;
     }
 
-    public MovieType getKind() {
-        return kind;
+    public MovieType getType() {
+        return type;
     }
 
-    public void setKind(MovieType kind) {
-        this.kind = kind;
+    public void setType(MovieType type) {
+        this.type = type;
     }
 
     public List<StarWarsCharacter> getMainCharacters() {
@@ -83,7 +83,7 @@ public class StarWarsMovie {
         sb.append(", director='").append(director).append('\'');
         sb.append(", chronologicalOrder=").append(chronologicalOrder);
         sb.append(", personalOrder=").append(personalOrder);
-        sb.append(", kind=").append(kind);
+        sb.append(", type=").append(type);
         sb.append(", mainCharacters=").append(mainCharacters);
         sb.append('}');
         return sb.toString();
@@ -95,6 +95,6 @@ public class StarWarsMovie {
     private String director;
     private int chronologicalOrder;
     private int personalOrder;
-    private MovieType kind;
+    private MovieType type;
     private List<StarWarsCharacter> mainCharacters;
 }

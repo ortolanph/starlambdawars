@@ -6,14 +6,24 @@ package org.starlambdawars.beans;
  * @author Paulo Henrique Ortolan
  */
 public enum ForceAlignment {
-    /** Dark Side */
+    /**
+     * Dark Side
+     */
     DARK_SIDE,
-    /** Light Side */
+    /**
+     * Light Side
+     */
     LIGHT_SIDE,
-    /** Gray Side */
+    /**
+     * Gray Side
+     */
     GRAY_SIDE,
-    /** Common people */
+    /**
+     * Common people
+     */
     WITHOUT_FORCE,
-    /** Force alignment not provided yet on movies */
+    /**
+     * Force alignment not provided yet on movies
+     */
     UNKNOWN;
 }

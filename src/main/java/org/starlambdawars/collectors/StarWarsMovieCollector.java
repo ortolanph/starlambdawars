@@ -8,40 +8,43 @@ import org.starlambdawars.mapper.StarWarsMovieMapper;
 import org.starlambdawars.utils.DataLoader;
 
 import java.io.IOException;
-import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class StarWarsMovieCollector {
 
-    public StarWarsMovieCollector() throws IOException {
-        loader = new DataLoader();
+    public StarWarsMovieCollector(DataLoader loader, StarWarsMovieMapper mapper) throws IOException {
         movies = loader.loadMovies();
-        mapper = new StarWarsMovieMapper();
+        this.characters = mapper.allCharacters();
     }
 
     public Map<ForceAlignment, List<String>> mapForceByCharacters() {
-        List<StarWarsCharacter> characters = mapper.allCharacters();
-
-        Map<ForceAlignment, List<String>> result = new HashMap<>();
-
-        Stream
-                .of(ForceAlignment.values())
-                .forEach(a -> result.put(a, findByForceAlignment(a, characters)));
-
-        return result;
+        return characters
+                .stream()
+                .map(f -> f.getForceAlignment())
+                .distinct()
+                .collect(
+                        Collectors
+                                .toMap(
+                                        f -> f,
+                                        f -> findByForceAlignment(f, characters)
+                                )
+                );
     }
 
     public Map<MovieType, List<String>> mapTypeByMovies() {
-        Map<MovieType, List<String>> result = new HashMap<>();
-
-        Stream
-                .of(MovieType.values())
-                .forEach(k -> result.put(k, findByKind(k, movies)));
-
-        return result;
+        return movies
+                .stream()
+                .map(t -> t.getType())
+                .distinct()
+                .collect(
+                        Collectors
+                                .toMap(
+                                        t -> t,
+                                        t -> findByType(t, movies)
+                                )
+                );
     }
 
     private List<String> findByForceAlignment(ForceAlignment alignment, List<StarWarsCharacter> characters) {
@@ -52,15 +55,14 @@ public class StarWarsMovieCollector {
                 .collect(Collectors.toList());
     }
 
-    private List<String> findByKind(MovieType kind, List<StarWarsMovie> movies) {
+    private List<String> findByType(MovieType type, List<StarWarsMovie> movies) {
         return movies
                 .stream()
-                .filter(m -> m.getKind().equals(kind))
+                .filter(m -> m.getType().equals(type))
                 .map(m -> m.getTitle())
                 .collect(Collectors.toList());
     }
 
-    private DataLoader loader;
     private List<StarWarsMovie> movies;
-    private StarWarsMovieMapper mapper;
+    private List<StarWarsCharacter> characters;
 }

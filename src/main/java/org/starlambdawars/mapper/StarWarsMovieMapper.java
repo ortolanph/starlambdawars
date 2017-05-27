@@ -10,8 +10,7 @@ import java.util.stream.Collectors;
 
 public class StarWarsMovieMapper {
 
-    public StarWarsMovieMapper() throws IOException {
-        loader = new DataLoader();
+    public StarWarsMovieMapper(DataLoader loader) throws IOException {
         movies = loader.loadMovies();
     }
 
@@ -41,6 +40,5 @@ public class StarWarsMovieMapper {
                 .collect(Collectors.toList());
     }
 
-    private DataLoader loader;
     private List<StarWarsMovie> movies;
 }

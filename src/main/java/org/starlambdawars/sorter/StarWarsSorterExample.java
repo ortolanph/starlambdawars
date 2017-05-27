@@ -10,10 +10,11 @@ import java.util.stream.Collectors;
 
 public class StarWarsSorterExample {
     public static void main(String[] args) throws IOException {
-        DataLoader loader = new DataLoader();
+        DataLoader loader = new DataLoader(args[0]);
         List<StarWarsMovie> movies = loader.loadMovies();
 
         System.out.println("Release date order");
+        System.out.println("------------------");
         movies
                 .stream()
                 .sorted(Comparator.comparing(StarWarsMovie::getReleaseDate))

@@ -1,11 +1,14 @@
 package org.starlambdawars.sorter;
 
+import org.starlambdawars.utils.DataLoader;
+
 import java.io.IOException;
 
 public class StarWarsMovieSorterExample {
 
     public static void main(String[] args) throws IOException {
-        StarWarsMovieSorter sorter = new StarWarsMovieSorter();
+        DataLoader loader = new DataLoader(args[0]);
+        StarWarsMovieOderer sorter = new StarWarsMovieOderer(loader);
 
         System.out.println("Id Order");
         System.out.println("--------");

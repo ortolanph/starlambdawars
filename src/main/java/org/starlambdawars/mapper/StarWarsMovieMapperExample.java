@@ -1,11 +1,14 @@
 package org.starlambdawars.mapper;
 
+import org.starlambdawars.utils.DataLoader;
+
 import java.io.IOException;
 
 public class StarWarsMovieMapperExample {
 
     public static void main(String[] args) throws IOException {
-        StarWarsMovieMapper mapper = new StarWarsMovieMapper();
+        DataLoader loader = new DataLoader(args[0]);
+        StarWarsMovieMapper mapper = new StarWarsMovieMapper(loader);
 
         System.out.println("All directors");
         System.out.println("-------------");
@@ -26,7 +29,7 @@ public class StarWarsMovieMapperExample {
         System.out.println("--------------");
         mapper
                 .allCharacters()
-                .forEach(System.out::println);
+                .forEach(c -> System.out.printf("%s\t%s\t%s", c.getName(), c.getPlayedBy(), c.getForceAlignment()));
     }
 
 }

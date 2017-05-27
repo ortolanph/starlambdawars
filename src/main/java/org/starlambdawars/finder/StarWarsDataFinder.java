@@ -6,16 +6,12 @@ import org.starlambdawars.utils.DataLoader;
 
 import java.io.IOException;
 import java.time.LocalDate;
-import java.time.LocalDateTime;
 import java.util.List;
-import java.util.function.Predicate;
 import java.util.stream.Collectors;
-import java.util.stream.Stream;
 
 public class StarWarsDataFinder {
 
-    public StarWarsDataFinder() throws IOException {
-        loader = new DataLoader();
+    public StarWarsDataFinder(DataLoader loader) throws IOException {
         movies = loader.loadMovies();
     }
 
@@ -48,6 +44,5 @@ public class StarWarsDataFinder {
                 .collect(Collectors.toList());
     }
 
-    private DataLoader loader;
     private List<StarWarsMovie> movies;
 }

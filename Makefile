@@ -1,23 +1,32 @@
-STAR_JAR=target/starlambdawars-long-time-ago.jar
+STAR_JAR=target/starlambdawars-jar-with-dependencies.jar
 BASE_CP=org.starlambdawars
-DATA_FILE=src/main/resources/formula_one_2010_2012.csv
+DATA_FILE=src/main/resources/all_star_wars_movies.json
 
 .PHONY: clean
 
 clean:
-	mvn clean
+	@mvn clean
 
 compile:
-	mvn clean install -DskipTests
+	@mvn clean install -DskipTests
 
-filter: compile
-	java -cp $(STAR_JAR) $(BASE_CP).finder.StarWarsFilterExample
+assemble:
+	@mvn assembly:assembly
 
-mapper: compile
-	java -cp $(STAR_JAR) $(BASE_CP).mapper.StarWarsMovieMapperExample
+filter:
+	@java -cp $(STAR_JAR) $(BASE_CP).finder.StarWarsFilterExample $(DATA_FILE)
 
-sorter: compile
-	java -cp $(STAR_JAR) $(BASE_CP).sorter.StarWarsMovieSorterExample
+finder:
+	@java -cp $(STAR_JAR) $(BASE_CP).finder.StarWarsDataFinderExample $(DATA_FILE)
 
-collector: compile
-	java -cp $(STAR_JAR) $(BASE_CP).collectors.StarWarsMovieCollector
+mapper:
+	@java -cp $(STAR_JAR) $(BASE_CP).mapper.StarWarsMovieMapperExample $(DATA_FILE)
+
+sorter:
+	@java -cp $(STAR_JAR) $(BASE_CP).sorter.StarWarsSorterExample $(DATA_FILE)
+
+order:
+	@java -cp $(STAR_JAR) $(BASE_CP).sorter.StarWarsMovieSorterExample $(DATA_FILE)
+
+collector:
+	@java -cp $(STAR_JAR) $(BASE_CP).collectors.StarWarsMovieCollectorExample $(DATA_FILE)

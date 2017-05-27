@@ -14,7 +14,7 @@ import java.util.stream.Collectors;
 public class StarWarsFilterExample {
 
     public static void main(String[] args) throws IOException {
-        DataLoader loader = new DataLoader();
+        DataLoader loader = new DataLoader(args[0]);
         List<StarWarsMovie> movies = loader.loadMovies();
 
         System.out.println("Find movies directed by George Lucas with Luke SkyWalker in the 80's");

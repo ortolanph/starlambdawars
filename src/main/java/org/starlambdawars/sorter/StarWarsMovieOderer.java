@@ -8,10 +8,9 @@ import java.util.Comparator;
 import java.util.List;
 import java.util.stream.Collectors;
 
-public class StarWarsMovieSorter {
+public class StarWarsMovieOderer {
 
-    public StarWarsMovieSorter() throws IOException {
-        loader = new DataLoader();
+    public StarWarsMovieOderer(DataLoader loader) throws IOException {
         movies = loader.loadMovies();
     }
 
@@ -40,6 +39,5 @@ public class StarWarsMovieSorter {
         return myMovies;
     }
 
-    private DataLoader loader;
     private List<StarWarsMovie> movies;
 }
