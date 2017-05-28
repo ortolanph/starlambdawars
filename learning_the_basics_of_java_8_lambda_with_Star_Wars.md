@@ -6,6 +6,7 @@
     1. Java 8 Lambdas
     2. Other acknowledgements
 2. Filters
+   1. Implementing a predicate
 3. Mappers
 4. Sorters
 5. Collectors
