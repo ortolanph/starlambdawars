@@ -1,8 +1,15 @@
-# Learnind the basics of Java 8 Lambda with Star Wars
+# Learning the basics of Java 8 Lambda with Star Wars
 
 ## Index
 
-
+1. Introduction
+    1. Java 8 Lambdas
+    2. Other acknowledgements
+2. Filters
+3. Mappers
+4. Sorters
+5. Collectors
+6. Conclusion
 
 ## Introduction
 
@@ -25,7 +32,13 @@ Address to the README.md file to understand how to run the examples of this arti
 
 ## Filters
 
-Filters mean to select data within a condition. In Java, conditions are predicates and it's addressed to  
+Filters mean to select data within a condition. In Java, conditions are predicates and they are addressed to the ```java.util.function.Predicate<T>``` interface. There's only one method that must be implemented: the ```boolean test(T t)``` method, that evaluates an expression and returns a boolean. There are other default methods
+
+Click the following link to the [Predicate](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html) documentation.
+
+### Implementing a Predicate
+
+
 
 ## Mappers
 
@@ -40,3 +53,5 @@ Filters mean to select data within a condition. In Java, conditions are predicat
 
 
 ## Conclusion
+
+This is only the basics.
