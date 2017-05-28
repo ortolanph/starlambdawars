@@ -38,7 +38,7 @@ Click the following link to the [Predicate](https://docs.oracle.com/javase/8/doc
 
 ### Implementing a Predicate
 
-
+hklkhjkhlkklhk
 
 ## Mappers
 
