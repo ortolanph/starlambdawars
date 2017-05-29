@@ -13,8 +13,13 @@
    2. ```flatMap``` and ```distinct```
 4. Sorters
    1. Implementing a ```Comparator```
+   2. Using a ```Comparator```
+   3. Reversing a list
 5. Collectors
-6. Conclusion
+   1. ```toList()``` and ```toSet```
+   2. ```toMap```
+6. ```toMap```
+7. Conclusion
 
 ## Introduction
 
@@ -252,10 +257,73 @@ List<StarWarsMovie> myMovies = movies
 
 This makes easy to sort a collection.
 
+Check the ```org.starlambdawars.sorter``` package to see the examples implemented with the Comparator to sort data. Modify the ```personalOrder``` field in the data file to see what outputs in the ```personalOrderSorting()``` method.   
+
 ## Collectors
 
+All the examples ends with a call to the ```collect``` method. This is a special method that closes the ```Stream``` opened by the ```stream()``` method and reduces the stream to a collection.
 
+There is a class that makes things easy to use this method, that is the ```Collectors``` class. The main three methods in this class are:
+
+1. ```toList``` that creates a list
+2. ```toSet``` that creates a set
+3. ```toMap``` that creates a map
+
+### ```toList``` and ```toSet```
+
+They are easy. Just call it and will result in a list or a set. But remember: sets are lists that repetitions are not allowed. So, just remember to implement ```equals``` and ```hashCode``` methods of the containing class before use. 
+
+The following code snippet shows a ```toList``` Collectors call:
+
+```java
+private List<String> findByForceAlignment(ForceAlignment alignment, List<StarWarsCharacter> characters) {
+    return characters
+            .stream()
+            .filter(c -> c.getForceAlignment().equals(alignment))
+            .map(c -> c.getName())
+            .collect(Collectors.toList());
+}
+```
+
+### ```toMap```
+
+Maps require two things to build: a key type and a value type. The ```toMap``` method requires at last two parameters:
+ 
+1. a ```Function``` that defines the key
+2. a ```Function``` that defines the value
+
+In the example below, the resulting map will have a enum key, typed by the ```ForceAlignment``` enum, and a List of the characters names as the value. First, it's needed to transform the ```StarWarsMovie``` stream into a ```ForceAlignment``` enum stream using the ```map``` function. Then it's needed to create a distinct list of them and finally call to ```collector``` to create the map. 
+
+```java
+public Map<ForceAlignment, List<String>> mapForceByCharacters() {
+    return characters
+            .stream()
+            .map(f -> f.getForceAlignment())
+            .distinct()
+            .collect(
+                    Collectors
+                            .toMap(
+                                    f -> f,
+                                    f -> findByForceAlignment(f, characters)
+                            )
+            );
+}
+```
+
+The key will have the identiy function and it has to be written that way ```f -> f```. The value must have to return a List of String called by the method ```findByForceAlignment```. It's implementation is in the previous section.
+
+## ```forEach```
+ 
+As a last thing, the forEach method implements a for-each statement. It's easy! The code snippet below shows it in action:
+
+```java
+sorter
+        .personalOrderSorting()
+        .forEach(m -> System.out.println(m.getTitle()));
+```
+
+In this example, the ```forEach``` is looping over a stream of ```StarWarsMovies``` coming from the ```personalOrderSorting()``` method. The class that is looping this stream doesn't need to know nothing about ```StarWarsMovie``` class or even import it if it'll be used to simple things like print out on the screen. The ```forEach``` method can even be called from a List or a Set without calling the ```stream``` method. 
 
 ## Conclusion
 
-This is only the basics.
+Java 8 stream api and java 8 lambdas help programmers to create better and short code. It can be complicated when learning, but everything will make sense after using a little bit more. Some programmers complains that Java is a verbose language, but with streams it's possible to remove this verbosity and make things simple as seen on the examples. Clone this repository and try to learn from it. It's free to modify the data for testing purposes. 
