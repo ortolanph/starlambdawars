@@ -8,7 +8,8 @@ public class StarWarsMovieMapperExample {
 
     public static void main(String[] args) throws IOException {
         DataLoader loader = new DataLoader(args[0]);
-        StarWarsMovieMapper mapper = new StarWarsMovieMapper(loader);
+        TitleFunction titleFunction = new TitleFunction();
+        StarWarsMovieMapper mapper = new StarWarsMovieMapper(loader, titleFunction);
 
         System.out.println("All directors");
         System.out.println("-------------");
@@ -29,7 +30,7 @@ public class StarWarsMovieMapperExample {
         System.out.println("--------------");
         mapper
                 .allCharacters()
-                .forEach(c -> System.out.printf("%s\t%s\t%s", c.getName(), c.getPlayedBy(), c.getForceAlignment()));
+                .forEach(c -> System.out.printf("%s\t%s\t%s\n", c.getName(), c.getPlayedBy(), c.getForceAlignment()));
     }
 
 }

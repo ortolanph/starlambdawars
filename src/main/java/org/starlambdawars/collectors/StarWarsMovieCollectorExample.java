@@ -3,6 +3,7 @@ package org.starlambdawars.collectors;
 import org.starlambdawars.beans.ForceAlignment;
 import org.starlambdawars.beans.MovieType;
 import org.starlambdawars.mapper.StarWarsMovieMapper;
+import org.starlambdawars.mapper.TitleFunction;
 import org.starlambdawars.utils.DataLoader;
 
 import java.io.IOException;
@@ -13,7 +14,8 @@ public class StarWarsMovieCollectorExample {
 
     public static void main(String[] args) throws IOException {
         DataLoader loader = new DataLoader(args[0]);
-        StarWarsMovieMapper mapper = new StarWarsMovieMapper(loader);
+        TitleFunction titleFunction = new TitleFunction();
+        StarWarsMovieMapper mapper = new StarWarsMovieMapper(loader, titleFunction);
         StarWarsMovieCollector collector = new StarWarsMovieCollector(loader, mapper);
 
         System.out.println("Force Alignment");

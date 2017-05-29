@@ -4,10 +4,13 @@
 
 1. Introduction
     1. Java 8 Lambdas
-    2. Other acknowledgements
+    2. Source Code
+    3. Other acknowledgements
 2. Filters
    1. Implementing a predicate
 3. Mappers
+   1. Writing a function
+   2. ```flatMap``` and ```distinct```
 4. Sorters
 5. Collectors
 6. Conclusion
@@ -26,6 +29,10 @@ This article is devided into four sections:
 2. Mappers, in which the ```map``` and the ```flatMap``` methods are discussed
 3. Sorters, in which the ```sort``` method is used
 4. Collector, in which the ```collect``` method is used
+
+### Source Code
+
+To write this article, I developed a small project. It's on github, just to be cloned. Address to the [project link](https://github.com/ortolanph/starlambdawars) and have fun. Don't forget to star this project!
 
 ### Other acknowledgements
 
@@ -120,13 +127,84 @@ private static Predicate<StarWarsMovie> inThe80s() {
 
 It can be seem that the methods ```collect``` and  ```forEach``` are used. It'll be discussed further in the article.
 
+See the implemented examples on the ```org.starlambdawars.finder ``` package of the project to see how to implement a ```Predicate```. Feel free to clone the repository and change the code.
+
 ## Mappers
 
+Maps in the Java 8 streams are converters. They are not related to the ```Map``` data structure. They receive a ```java.util.function.Function``` object to make this conversion. As the ```Predicate``` interface, the ```Function``` interface have one method to be overrided that is the ```apply``` method, and other default and static methods.
 
+The default methods enhance function composition, but unfortunatelly that will not be discussed in this article. The static method represents a special function that is the identity function.
+
+The examples of this articles are simple. Not that complex. They are here just to introduce the notion of map inside a stream chain.
+
+### Writing a function
+
+It's wanted to have a list of all the movies in a list collection. Prior to Java 8, it could be done creating a ```List``` instance, iterating over all movies with for each statement (or even a traditional for statement) and adding each item to the list.
+
+That seems to much work to do. And it is! Let's make thins easy.
+
+First way to provide a solution is to implement the ```Function``` interface. That's easy! The code below address to this kind of implementation:
+
+```java
+public class TitleFunction implements Function<StarWarsMovie, String> {
+
+    @Override
+    public String apply(StarWarsMovie starWarsMovie) {
+        return starWarsMovie.getTitle();
+    }
+}
+```
+
+And this function can be used in the ```map``` call in the stream chaining like this:
+
+```java
+public List<String> allTitles() {
+    return movies
+            .stream()
+            .map(titleFunction)
+            .collect(Collectors.toList());
+}
+```
+
+In the example above, the ```titleFunction``` variable is an instance of the TitleFunction class implemented before. It's possible to use the arrow notation to implement this function. The example below shows this:
+
+```java
+public List<String> allTitles() {
+    return movies
+            .stream()
+            .map(m -> m.getTitle())
+            .collect(Collectors.toList());
+}
+```
+
+### ```flatMap``` and ```distinct```
+
+Other way to convert things is to use Flatmaps. It behaves the same as map does, but it will return zero or more occurrencies. The code below uses the flatMap in the stream chain:
+
+```java
+public List<StarWarsCharacter> allCharacters() {
+    return movies
+            .stream()
+            .map(l -> l.getMainCharacters())
+            .collect(Collectors.toList())
+            .stream()
+            .flatMap(List::stream)
+            .distinct()
+            .collect(Collectors.toList());
+}
+```
+
+That means that in the end there will be a list of distinct characters of all movies. If a movie has no charaters, nothing will be added (in the case of the Qatsi trilogy).
+
+Chaining ```distinct()``` will build a list without repetition. To make this possible it's required to implement ```hashCode()``` and ```equals()``` methods to better accuracy on the results.
+
+That's simple and fun! Another way to implement a custom function is to create a custom interface function using the ```@FunctionalInterface``` annotation. As the examples of this articles are not that complex, it'll not be used here.
+
+Check the implemented examples on the ```org.starlambdawars.mapper``` package. Try to implement a function to retrieve other informations from the dataset.
 
 ## Sorters
 
-
+To sort something in java is the same to implement the ```java.util.Comparator``` interface.  
 
 ## Collectors
 

@@ -10,14 +10,15 @@ import java.util.stream.Collectors;
 
 public class StarWarsMovieMapper {
 
-    public StarWarsMovieMapper(DataLoader loader) throws IOException {
+    public StarWarsMovieMapper(DataLoader loader, TitleFunction titleFunction) throws IOException {
         movies = loader.loadMovies();
+        this.titleFunction = titleFunction;
     }
 
     public List<String> allDirectors() {
         return movies
                 .stream()
-                .map(d -> d.getDirector())
+                .map(m -> m.getDirector())
                 .distinct()
                 .collect(Collectors.toList());
     }
@@ -25,7 +26,7 @@ public class StarWarsMovieMapper {
     public List<String> allTitles() {
         return movies
                 .stream()
-                .map(m -> m.getTitle())
+                .map(titleFunction)
                 .collect(Collectors.toList());
     }
 
@@ -41,4 +42,5 @@ public class StarWarsMovieMapper {
     }
 
     private List<StarWarsMovie> movies;
+    private TitleFunction titleFunction;
 }
