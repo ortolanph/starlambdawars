@@ -7,18 +7,22 @@ import org.starlambdawars.utils.DataLoader;
 import java.io.IOException;
 import java.time.LocalDate;
 import java.util.List;
+import java.util.function.Predicate;
 import java.util.stream.Collectors;
 
 public class StarWarsDataFinder {
 
-    public StarWarsDataFinder(DataLoader loader) throws IOException {
+    public StarWarsDataFinder(DataLoader loader, DirectorPredicate directorPredicate) throws IOException {
         movies = loader.loadMovies();
+        this.directorPredicate = directorPredicate;
     }
 
     public List<StarWarsMovie> findMovieByDirector(String director) {
+        directorPredicate.setDirector(director);
+
         return movies
                 .stream()
-                .filter(m -> m.getDirector().equals(director))
+                .filter(directorPredicate)
                 .collect(Collectors.toList());
     }
 
@@ -45,4 +49,5 @@ public class StarWarsDataFinder {
     }
 
     private List<StarWarsMovie> movies;
+    private final DirectorPredicate directorPredicate;
 }

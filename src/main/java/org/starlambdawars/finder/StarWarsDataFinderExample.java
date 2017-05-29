@@ -11,7 +11,8 @@ public class StarWarsDataFinderExample {
 
     public static void main(String[] args) throws IOException {
         DataLoader loader = new DataLoader(args[0]);
-        StarWarsDataFinder finder = new StarWarsDataFinder(loader);
+        DirectorPredicate predicate = new DirectorPredicate();
+        StarWarsDataFinder finder = new StarWarsDataFinder(loader, predicate);
 
         System.out.println("Movies directed by George Lucas");
         System.out.println("-------------------------------");
