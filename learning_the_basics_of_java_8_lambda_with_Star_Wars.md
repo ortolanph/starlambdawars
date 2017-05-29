@@ -12,6 +12,7 @@
    1. Writing a function
    2. ```flatMap``` and ```distinct```
 4. Sorters
+   1. Implementing a ```Comparator```
 5. Collectors
 6. Conclusion
 
@@ -204,7 +205,15 @@ Check the implemented examples on the ```org.starlambdawars.mapper``` package. T
 
 ## Sorters
 
-To sort something in java is the same to implement the ```java.util.Comparator``` interface.  
+To sort something in java is the same to implement the ```java.util.Comparator``` interface. The key method in the stream chaining is the ```sort``` method.
+
+It was added to the ```Comparator``` class a bunch of default methods, just make the development of a Compator easy. It'll not be discussed every default method on this article, just the ```comparing``` method.
+
+### Implementing a ```Comparator```
+
+It's already known the implementation of a Comparator and, because of this, it'll not be added a code snippet showing this.
+  
+
 
 ## Collectors
 
