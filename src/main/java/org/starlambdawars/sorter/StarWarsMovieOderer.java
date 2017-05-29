@@ -23,11 +23,15 @@ public class  StarWarsMovieOderer {
     }
 
     public List<StarWarsMovie> chronologicalOrderSorting() {
-        return createOrderedList(Comparator.comparing(StarWarsMovie::getChronologicalOrder));
+        return createOrderedList((m1, m2) -> m1.getChronologicalOrder() - m2.getChronologicalOrder());
     }
 
     public List<StarWarsMovie> personalOrderSorting() {
         return createOrderedList(Comparator.comparing(StarWarsMovie::getPersonalOrder));
+    }
+
+    public List<StarWarsMovie> releaseOrderSortingReversed() {
+        return createOrderedList(Comparator.comparing(StarWarsMovie::getReleaseDate).reversed());
     }
 
     private List<StarWarsMovie> createOrderedList(Comparator<StarWarsMovie> comparator) {

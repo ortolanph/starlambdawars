@@ -37,6 +37,13 @@ public class StarWarsMovieSorterExample {
                 .releaseOrderSorting()
                 .forEach(m -> System.out.println(m.getTitle()));
         System.out.println();
+
+        System.out.println("Reversed Release Order");
+        System.out.println("----------------------");
+        sorter
+                .releaseOrderSortingReversed()
+                .forEach(m -> System.out.println(m.getTitle()));
+        System.out.println();
     }
 
 }

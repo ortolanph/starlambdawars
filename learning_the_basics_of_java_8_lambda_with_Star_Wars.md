@@ -212,8 +212,45 @@ It was added to the ```Comparator``` class a bunch of default methods, just make
 ### Implementing a ```Comparator```
 
 It's already known the implementation of a Comparator and, because of this, it'll not be added a code snippet showing this.
-  
 
+There are two ways to use a Comparator: implementing using the arrow notation or using the ```comparing``` default method.
+
+Let's implement a Comparator using the ```chronologicalOrder``` field. The chronological order will tell us what's the movie order when sorting it by the number of the episodes. The code snippet below shows this:
+ 
+```java
+List<StarWarsMovie> myMovies = movies
+        .stream()
+        .sorted((m1, m2) -> m1.getChronologicalOrder() - m2.getChronologicalOrder())
+        .collect(Collectors.toList());
+```
+
+The syntax is a bit different from the other implementation because the ```compare``` method takes two parameters, just as if it was implemented.
+
+### Using a ```Comparator```
+
+In the ```Comparator``` class, there are a bunch of static methods that can be used to avoid implementations. One of this static methods is the ```comparing``` method, that takes a ```Function``` as a parameter. It's not necessary to implement a function to make use of this method, just use the double-colon (```::```) notation informing the Class name and the method name, like this: ```Class::method```. It'll convert into a function returning the method return.
+
+The implementation of another example, using the field ```releaseDate``` stays as follows:
+
+```java
+List<StarWarsMovie> myMovies = movies
+        .stream()
+        .sorted(Comparator.comparing(StarWarsMovie::getReleaseDate))
+        .collect(Collectors.toList());
+```
+
+### Reversing a list
+
+Following the previous example, it's simple to write a code to modify the sort order. It's needed to add only one thing: a call to ```reversed()``` method.    
+
+```java
+List<StarWarsMovie> myMovies = movies
+        .stream()
+        .sorted(Comparator.comparing(StarWarsMovie::getReleaseDate).reversed())
+        .collect(Collectors.toList());
+```
+
+This makes easy to sort a collection.
 
 ## Collectors
 
