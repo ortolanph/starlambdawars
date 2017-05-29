@@ -5,7 +5,7 @@
 1. Introduction
     1. Java 8 Lambdas
     2. Source Code
-    3. Other acknowledgements
+    3. Running the examples
 2. Filters
    1. Implementing a predicate
 3. Mappers
@@ -40,7 +40,7 @@ This article is devided into four sections:
 
 To write this article, I developed a small project. It's on github, just to be cloned. Address to the [project link](https://github.com/ortolanph/starlambdawars) and have fun. Don't forget to star this project!
 
-### Other acknowledgements
+### Running the examples
 
 Address to the README.md file to understand how to run the examples of this article.
 

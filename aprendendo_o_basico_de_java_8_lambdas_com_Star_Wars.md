@@ -1,29 +1,29 @@
-# Learning the basics of Java 8 Lambda with Star Wars
+# Aprendendo o básico de java 9 lambdas com Star Wars
 
-## Index
+## Índice
 
-1. Introduction
+1. Introdução
     1. Java 8 Lambdas
-    2. Source Code
-    3. Other acknowledgements
+    2. Código Fonte
+    3. Executando os exemplos
 2. Filters
-   1. Implementing a predicate
+   1. Implementando um predicate
 3. Mappers
-   1. Writing a function
-   2. ```flatMap``` and ```distinct```
+   1. Escrevendo uma function
+   2. ```flatMap``` e ```distinct```
 4. Sorters
-   1. Implementing a ```Comparator```
-   2. Using a ```Comparator```
-   3. Reversing a list
+   1. Implementando um ```Comparator```
+   2. Usando um ```Comparator```
+   3. Revertendo uma lista
 5. Collectors
-   1. ```toList()``` and ```toSet```
+   1. ```toList()``` e ```toSet```
    2. ```toMap```
 6. ```toMap```
-7. Conclusion
+7. Conclusão
 
-## Introduction
+## Introdução
 
-Star Wars is the most famous brand in this side of the universe. All it's stories occurs a long time ago in a galaxy far far away. It generated tons of fans around the world within many and many generations. With eight movies, seven in the main saga and one spin-off (at the moment I am writing this article there were two upcoming movies, one of the main saga and other spin-off), many things can be done to browse data. I'm ignoring the Holiday Special and the two Ewoks movies. Feel free to input these movies data in the ```all_star_wars_movie.json``` data file.
+Star Wars é uma das franquias mais famosas deste lado do universo. Todas a trama ocorre há muito tempo atrás em uma galáxia muito muito distante. Foi responsável por gerar incontáveis fãs pelo planeta entre muitas gerações. Com oito filmes, sete da saga principal e um spin-off (até o momento de encerramento desse artigo existe um filme da saga sendo filmado e um outro spin-off) muitas coisas podem ser feitas para minerar seus dados. Esse artigo está ignorando o Star Wars Holiday Special e os filmes dos Ewoks. Sinta-se livre para inseri-los no arquivo ```all_star_wars_movie.json```.
 
 ### Java 8 Lambdas
 
@@ -40,7 +40,7 @@ This article is devided into four sections:
 
 To write this article, I developed a small project. It's on github, just to be cloned. Address to the [project link](https://github.com/ortolanph/starlambdawars) and have fun. Don't forget to star this project!
 
-### Other acknowledgements
+### Executando os exemplos
 
 Address to the README.md file to understand how to run the examples of this article.
 
