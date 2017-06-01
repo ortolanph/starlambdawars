@@ -27,34 +27,34 @@ Star Wars é uma das franquias mais famosas deste lado do universo. Todas a tram
 
 ### Java 8 Lambdas
 
-In the Java language, the lambdas were introduced in the version 8. They are all spread in the language making easy the way we use things. Check the IO package to see new ways to load files. Other thing that was introduced with Java 8 lambdas was the default interface methods to help the lambdas. Check the Comparator interface, there are a bunch of default methods there. It's used in the sorter examples of this article. Many other things were introduced to make easy the way we develop in Java nowadays.
+Na linguagem de programação Java, os lambdas foram introduzidos na versão 8 e estão espalhadas pela linguagem facilitando o jeito pelo qual usamos as coisas. Verifique no pacote de IO para ver novas maneiras de carregar arquivos. Outra característica que foi introduzida com os lambdas, foram os métodos default nas interfaces. Verifique a interface Comparator, lá existem muitos métodos default. Eles serão utilizados nos exemplos desse artigo para ordenar coisas. Muitas outras coisas foram introduzidas na versão 8 para facilitar o desenvolvimento de aplicações em Java.
 
-This article is devided into four sections:
+Esse artigo está dividido em quatro seções:
 
-1. Filters, in which the ```filter``` method use is demonstrated
-2. Mappers, in which the ```map``` and the ```flatMap``` methods are discussed
-3. Sorters, in which the ```sort``` method is used
-4. Collector, in which the ```collect``` method is used
+1. Filters, no qual o método ```filter``` é demonstrado.
+2. Mappers, no qual os métodos ```map``` e ```flatMap``` serão discutidos
+3. Sorters, no qual o método ```sort``` é usado
+4. Collector, no qual o método ```collect``` é usado
 
-### Source Code
+### Código Fonta
 
-To write this article, I developed a small project. It's on github, just to be cloned. Address to the [project link](https://github.com/ortolanph/starlambdawars) and have fun. Don't forget to star this project!
+Para escrever esse arquivo, foi desenvolvido um pequeno projeto. Ele está no github pronto para ser clonado. Veja a e [página do projeto](https://github.com/ortolanph/starlambdawars) e se divirta. Não se esqueça de marcar o projeto com uma estrela!
 
 ### Executando os exemplos
 
-Address to the README.md file to understand how to run the examples of this article.
+Leia o arquivo README.md para entender como executar os exemplos desse artigo.
 
 ## Filters
 
-Filters mean to select data within a condition. In Java, conditions are predicates and they are addressed to the ```java.util.function.Predicate<T>``` interface. There's only one method that must be implemented: the ```boolean test(T t)``` method, that evaluates an expression and returns a boolean. There are other default methods that can be used when implementing this interface.
+Filters significam que é desejado selecionar dados sob uma condição. Em java, condições são predicados e os mesmos estão endereçados para a interface ```java.util.function.Predicate<T>```. Há somente um método que deve ser implementado: o método ```boolean test(T t)```, que avalia a expressão e retorna um booleano. Existem ainda outros métodos default que podem ser usados ao implementar essa interface.
 
-Click the following link to the [Predicate](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html) documentation.
+Acesse o link para a classe [Predicate](https://docs.oracle.com/javase/8/docs/api/java/util/function/Predicate.html) da documentação da Oracle.
 
-### Implementing a Predicate
+### Implmentando um Predicate
 
-There are mainly two ways to use a Predicate. The first is to implement the interface in a concrete class. The developer must implement all abstract methods, in this case the ```test``` method. It's possible to override the default methods, but it's not the main target of this article.
+Existem duas maneiras de se usar um Predicate. A primeira é implementar a interface em uma classe concreta. O desenvolvedor deve implementar todos os métodos abstratos, nesse caso, o método ```test```. É possivel ainda sobrescrever todos os métodos default, mas esse não é foco para esse artigo.
 
-Let's begin an example with our magnificent data set. It's desired to find movies that were directed by a certain director, let's say George Lucas. Yeah, the mind behind the saga.
+Ilustrando um exemplo com os magníficos dados, é desejado encontrar filmes que foram dirigidos por um certo diretor, George Lucas, a mente por trás da saga.
 
 ```java
 package org.starlambdawars.finder;
@@ -221,7 +221,7 @@ It's already known the implementation of a Comparator and, because of this, it'l
 There are two ways to use a Comparator: implementing using the arrow notation or using the ```comparing``` default method.
 
 Let's implement a Comparator using the ```chronologicalOrder``` field. The chronological order will tell us what's the movie order when sorting it by the number of the episodes. The code snippet below shows this:
- 
+
 ```java
 List<StarWarsMovie> myMovies = movies
         .stream()
@@ -271,7 +271,7 @@ There is a class that makes things easy to use this method, that is the ```Colle
 
 ### ```toList``` and ```toSet```
 
-They are easy. Just call it and will result in a list or a set. But remember: sets are lists that repetitions are not allowed. So, just remember to implement ```equals``` and ```hashCode``` methods of the containing class before use. 
+They are easy. Just call it and will result in a list or a set. But remember: sets are lists that repetitions are not allowed. So, just remember to implement ```equals``` and ```hashCode``` methods of the containing class before use.
 
 The following code snippet shows a ```toList``` Collectors call:
 
@@ -288,11 +288,11 @@ private List<String> findByForceAlignment(ForceAlignment alignment, List<StarWar
 ### ```toMap```
 
 Maps require two things to build: a key type and a value type. The ```toMap``` method requires at last two parameters:
- 
+
 1. a ```Function``` that defines the key
 2. a ```Function``` that defines the value
 
-In the example below, the resulting map will have a enum key, typed by the ```ForceAlignment``` enum, and a List of the characters names as the value. First, it's needed to transform the ```StarWarsMovie``` stream into a ```ForceAlignment``` enum stream using the ```map``` function. Then it's needed to create a distinct list of them and finally call to ```collector``` to create the map. 
+In the example below, the resulting map will have a enum key, typed by the ```ForceAlignment``` enum, and a List of the characters names as the value. First, it's needed to transform the ```StarWarsMovie``` stream into a ```ForceAlignment``` enum stream using the ```map``` function. Then it's needed to create a distinct list of them and finally call to ```collector``` to create the map.
 
 ```java
 public Map<ForceAlignment, List<String>> mapForceByCharacters() {
@@ -313,7 +313,7 @@ public Map<ForceAlignment, List<String>> mapForceByCharacters() {
 The key will have the identiy function and it has to be written that way ```f -> f```. The value must have to return a List of String called by the method ```findByForceAlignment```. It's implementation is in the previous section.
 
 ## ```forEach```
- 
+
 As a last thing, the forEach method implements a for-each statement. It's easy! The code snippet below shows it in action:
 
 ```java
@@ -322,8 +322,8 @@ sorter
         .forEach(m -> System.out.println(m.getTitle()));
 ```
 
-In this example, the ```forEach``` is looping over a stream of ```StarWarsMovies``` coming from the ```personalOrderSorting()``` method. The class that is looping this stream doesn't need to know nothing about ```StarWarsMovie``` class or even import it if it'll be used to simple things like print out on the screen. The ```forEach``` method can even be called from a List or a Set without calling the ```stream``` method. 
+In this example, the ```forEach``` is looping over a stream of ```StarWarsMovies``` coming from the ```personalOrderSorting()``` method. The class that is looping this stream doesn't need to know nothing about ```StarWarsMovie``` class or even import it if it'll be used to simple things like print out on the screen. The ```forEach``` method can even be called from a List or a Set without calling the ```stream``` method.
 
 ## Conclusion
 
-Java 8 stream api and java 8 lambdas help programmers to create better and short code. It can be complicated when learning, but everything will make sense after using a little bit more. Some programmers complains that Java is a verbose language, but with streams it's possible to remove this verbosity and make things simple as seen on the examples. Clone this repository and try to learn from it. It's free to modify the data for testing purposes. 
+Java 8 stream api and java 8 lambdas help programmers to create better and short code. It can be complicated when learning, but everything will make sense after using a little bit more. Some programmers complains that Java is a verbose language, but with streams it's possible to remove this verbosity and make things simple as seen on the examples. Clone this repository and try to learn from it. It's free to modify the data for testing purposes.
