@@ -27,7 +27,21 @@ Star Wars é uma das franquias mais famosas deste lado do universo. Todas a tram
 
 ### Java 8 Lambdas
 
+<<<<<<< HEAD
 Na linguagem de programação Java, os lambdas foram introduzidos na versão 8 e estão espalhadas pela linguagem facilitando o jeito pelo qual usamos as coisas. Verifique no pacote de IO para ver novas maneiras de carregar arquivos. Outra característica que foi introduzida com os lambdas, foram os métodos default nas interfaces. Verifique a interface Comparator, lá existem muitos métodos default. Eles serão utilizados nos exemplos desse artigo para ordenar coisas. Muitas outras coisas foram introduzidas na versão 8 para facilitar o desenvolvimento de aplicações em Java.
+=======
+Na linguagem de programação Java os lambdas e stream foram introduzidos na versão 8. 
+
+In the Java language, the lambdas were introduced in the version 8. 
+They are all spread in the language making easy the way we use things. 
+Check the IO package to see new ways to load files. 
+Other thing that was introduced with Java 8 lambdas was the default interface methods to help the lambdas. 
+Check the Comparator interface, there are a bunch of default methods there. 
+It's used in the sorter examples of this article. 
+Many other things were introduced to make easy the way we develop in Java nowadays.
+
+
+>>>>>>> b4af4f9f968810014efedf6a9303c71f1e422828
 
 Esse artigo está dividido em quatro seções:
 
