@@ -316,7 +316,7 @@ The key will have the identiy function and it has to be written that way ```f ->
 
 ## ```forEach```
 
-As a last thing, the forEach method implements a for-each statement. It's easy! The code snippet below shows it in action:
+Para finalizar o artigo, o método ```forEach``` implementa uma estrutura for-each. É muito simples de usar! O código abaixo mostra ele em ação:
 
 ```java
 sorter
@@ -324,7 +324,7 @@ sorter
         .forEach(m -> System.out.println(m.getTitle()));
 ```
 
-In this example, the ```forEach``` is looping over a stream of ```StarWarsMovies``` coming from the ```personalOrderSorting()``` method. The class that is looping this stream doesn't need to know nothing about ```StarWarsMovie``` class or even import it if it'll be used to simple things like print out on the screen. The ```forEach``` method can even be called from a List or a Set without calling the ```stream``` method.
+Nesse exemplo, o método ```forEach``` faz um loop em um stream de ```StarWarsMovies``` vindo do método ```personalOrderSorting()```. A classe que realizar esse loop, não necessita conhecer nada sobre a classe ```StarWarsMovie``` ou até mesmo importá-la se for utilizada por coisas simples. Como uma facilidade da versão 8, este método pode ser chamado por uma List ou um Set sem mesmo chamar o método ```stream()```.
 
 ## Conclusão
 
