@@ -27,21 +27,7 @@ Star Wars é uma das franquias mais famosas deste lado do universo. Todas a tram
 
 ### Java 8 Lambdas
 
-<<<<<<< HEAD
 Na linguagem de programação Java, os lambdas foram introduzidos na versão 8 e estão espalhadas pela linguagem facilitando o jeito pelo qual usamos as coisas. Verifique no pacote de IO para ver novas maneiras de carregar arquivos. Outra característica que foi introduzida com os lambdas, foram os métodos default nas interfaces. Verifique a interface Comparator, lá existem muitos métodos default. Eles serão utilizados nos exemplos desse artigo para ordenar coisas. Muitas outras coisas foram introduzidas na versão 8 para facilitar o desenvolvimento de aplicações em Java.
-=======
-Na linguagem de programação Java os lambdas e stream foram introduzidos na versão 8. 
-
-In the Java language, the lambdas were introduced in the version 8. 
-They are all spread in the language making easy the way we use things. 
-Check the IO package to see new ways to load files. 
-Other thing that was introduced with Java 8 lambdas was the default interface methods to help the lambdas. 
-Check the Comparator interface, there are a bunch of default methods there. 
-It's used in the sorter examples of this article. 
-Many other things were introduced to make easy the way we develop in Java nowadays.
-
-
->>>>>>> b4af4f9f968810014efedf6a9303c71f1e422828
 
 Esse artigo está dividido em quatro seções:
 
@@ -92,7 +78,7 @@ public class DirectorPredicate implements Predicate<StarWarsMovie> {
 }
 ```
 
-The class above shows the implementation of a ```Predicate```. The method test was implemented receiving a ```StarWarMovie``` object, containing all the movie information, including the director information. It's needed to create an instance of this class everytime when it's desired to use.
+A classe acima mostra a implementação de um ```Predicate```.  O método test foi implementado e recebe um objeto do tipo ```StarWarMovie```, contendo todas as informações de um filme, incluindo o diretor. É necessário criar uma instância dessa classe toda vez que for desejado usá-la.
 
 ```java
 public List<StarWarsMovie> findMovieByDirector(String director) {
@@ -105,11 +91,12 @@ public List<StarWarsMovie> findMovieByDirector(String director) {
 }
 ```
 
-To begin using streams in Java 8, the method ```stream()``` starts the magic. It will return a ```Stream<R>``` instance representing the object stream to be manipulated. Cool, huh?
+Para começar a usar streams no Java8, o método ```stream()``` inicia a mágica. Por sua vez o método irá retornar uma instânca de ```Stream<R>``` representando o stream de objeto para ser manipulado. Legal, né?
 
-The method ```filter``` receives the implementation of ```Predicate``` as a parameter and returns a ```Stream<R>```. Sounds a little complicated, but when looking at the code above, it seems better. It can be added to the custom predicate a setter method to set the director name everytime the predicate is called.
+O método ```filter``` recebe uma implementação de um ```Predicate``` como um parâmetro e retorna um ```Stream<R>```. Parece um  pouco complicado no começo, mas ao verificar os dois códigos, verifica-se que ambos combinam. Pode-se utilizar esse filtro customizado, utilizando o método ```test```.
 
-There's another way to implement the ```Predicate``` interface. In Java 8, interfaces that have one method to implemented can be direct implemented. How? It's not needed to implement that on a separate concrete class, it can be implemented directly on the method call with the Java 8 lambda notation. Yay! Making real progress here! The code below shows it:
+Existe um outro modo de implementar a interface ```Predicate```. No Java 8, interfaces que possuem um método
+podem ser implementados diretamente. Mas, como? Não é mais necessário criar mais uma classe concreta para isso, a implementação pode ocorrer diretamente na chamada do método usando a notação lambda do Java 8. Isso! Progredindo mais e mais! O código abaixo ilustra esse método:
 
 ```java
 public List<StarWarsMovie> findMovieByDirector(String director) {
@@ -119,9 +106,10 @@ public List<StarWarsMovie> findMovieByDirector(String director) {
             .collect(Collectors.toList());
 }
 ```
-What just happened here? Pure magic! In the filter method it's used the Java 8 arrow notation to implement a ```Predicate```. The symbol ```m``` represents an instance of the ```StarWarsMovie``` class, so it can call all the methods that are implemented there including the ```getDirector``` that retrieves the director information. This way, it's possible to call the ```equals``` method that can be used to find our movies filtering by directors.
 
-It's possible to chain multiple ```filter``` methods to best select our data. The code below show this chaining in action:
+O que está ocorrendo aqui? Mágica pura! No método filter, temos uma arrow notation sendo utilizada para implementar um ```Predicate```. O símbolo ```m``` representa uma instância da classe ```StarWarsMovie``` e, por isso, pode-se ser chamado todos os métodos implementados, inclusive o método ```getDirector``` que obtém informação de diretor. Desse modo é possível usar o método ```equals``` para filtrar pelo diretor.
+
+Ainda é possível encadear múltiplas chamadas de ```filter``` com o intuito de filtrar mais os dados. O código abaixo mostra o encadeamento em ação:
 
 ```java
 movies
@@ -133,7 +121,7 @@ movies
         .forEach(m -> System.out.println(m.getTitle()));
 ```
 
-The ```lukeSkywalker()``` methods creates an instance of StarWarsCharacter containing the name "Luke Skywalker" The implementation of the ```inThe80s()```, selects the movies between the 80's as follows:
+O método ```lukeSkywalker()``` cria uma instância de StarWarsCharacter contendo o nome "Luke Skywalker". A implementação do método ```inThe80s()```, filtra por filmes que foram estreados na década de 80. A implementação dele seria:
 
 ```java
 private static Predicate<StarWarsMovie> inThe80s() {
@@ -145,9 +133,9 @@ private static Predicate<StarWarsMovie> inThe80s() {
 }
 ```
 
-It can be seem that the methods ```collect``` and  ```forEach``` are used. It'll be discussed further in the article.
+Nota-se o uso dos métodos ```collect``` e ```forEach```. Ambos serão discutidos mais para frente nesse artigo.
 
-See the implemented examples on the ```org.starlambdawars.finder ``` package of the project to see how to implement a ```Predicate```. Feel free to clone the repository and change the code.
+Veja os exemplos implementados no pacote ```org.starlambdawars.finder ``` para verificar a implmentação de um ```Predicate```. Sinta-se livre para clonar o repositório e realizar mudanças no código.
 
 ## Mappers
 
@@ -338,6 +326,6 @@ sorter
 
 In this example, the ```forEach``` is looping over a stream of ```StarWarsMovies``` coming from the ```personalOrderSorting()``` method. The class that is looping this stream doesn't need to know nothing about ```StarWarsMovie``` class or even import it if it'll be used to simple things like print out on the screen. The ```forEach``` method can even be called from a List or a Set without calling the ```stream``` method.
 
-## Conclusion
+## Conclusão
 
-Java 8 stream api and java 8 lambdas help programmers to create better and short code. It can be complicated when learning, but everything will make sense after using a little bit more. Some programmers complains that Java is a verbose language, but with streams it's possible to remove this verbosity and make things simple as seen on the examples. Clone this repository and try to learn from it. It's free to modify the data for testing purposes.
+A API de streams, juntamente com os lambdas do Java 8, ajudam programadores a criar um código melhor e mais enxuto. Pode ser complicado no começo para assimilar, mas tudo ficará mais claro com um pouco mais de uso. Alguns programadores reclamam que Java é uma linguagem verbosa, mas com streams é possível simplificar o código como vistos nos exemplos. Sinta-se livre para clonar o repositório e aprender a partir dele Modifique os dados para realizar seus testes.
