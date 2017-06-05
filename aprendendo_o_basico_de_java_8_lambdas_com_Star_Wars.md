@@ -139,19 +139,19 @@ Veja os exemplos implementados no pacote ```org.starlambdawars.finder ``` para v
 
 ## Mappers
 
-Maps in the Java 8 streams are converters. They are not related to the ```Map``` data structure. They receive a ```java.util.function.Function``` object to make this conversion. As the ```Predicate``` interface, the ```Function``` interface have one method to be overrided that is the ```apply``` method, and other default and static methods.
+Mappers no Java 8 são conversores. Não estão relacionados com a estutura de dados ```Map```. O método ```map``` recebe uma implementação da interface ```java.util.function.Function``` que realiza a conversão. Assim como ```Predicate```, a interface ```Function``` possui um método para ser implmentado que é o método ```apply``` e outros métodos default e estáticos.
 
-The default methods enhance function composition, but unfortunatelly that will not be discussed in this article. The static method represents a special function that is the identity function.
+Os métodos default são utilizados para composição, mas infelizmente isso não será discutido nesse artigo. O método de classe se refere à uma função especial que é a função identidade (identity).
 
-The examples of this articles are simple. Not that complex. They are here just to introduce the notion of map inside a stream chain.
+Os exemplos desse artigo são simples. Não são complexos. Estão aqui somente para introduzir a noção de mapas dentro de uma encadeamento de streams.
 
-### Writing a function
+### Escrevendo uma Function
 
-It's wanted to have a list of all the movies in a list collection. Prior to Java 8, it could be done creating a ```List``` instance, iterating over all movies with for each statement (or even a traditional for statement) and adding each item to the list.
+Se faz necessário obter uma lista de todos os filmes em uma coleção. Antes de Java 8, isso podia ser feito criando uma instância de ```List```, interando sobre a lista de todos filmes com um for-each (ou até um loop for tradicional) e adicionando cada item à lista criada.
 
-That seems to much work to do. And it is! Let's make thins easy.
+Isso está parecendo muito trabalho, de fato!  Vamos deixar mais fácil.
 
-First way to provide a solution is to implement the ```Function``` interface. That's easy! The code below address to this kind of implementation:
+A primeira maneira para solucionar, é implementar a interface ```Function```. Fácil! O código abaixo trata dessa abordagem:
 
 ```java
 public class TitleFunction implements Function<StarWarsMovie, String> {
@@ -163,7 +163,7 @@ public class TitleFunction implements Function<StarWarsMovie, String> {
 }
 ```
 
-And this function can be used in the ```map``` call in the stream chaining like this:
+E essa função pode ser utilizada na chamada do método ```map``` no encadeamento de strems dessa maneira:
 
 ```java
 public List<String> allTitles() {
@@ -174,7 +174,7 @@ public List<String> allTitles() {
 }
 ```
 
-In the example above, the ```titleFunction``` variable is an instance of the TitleFunction class implemented before. It's possible to use the arrow notation to implement this function. The example below shows this:
+No exemplo acima, a variável ```titleFunction``` é uma instância da classe ```TitleFunction``` implementada antes. Para facilitar as coisas, é possível utilizar a notação arrow function para implementar essa função. Observe o código abaixo:
 
 ```java
 public List<String> allTitles() {
@@ -185,9 +185,9 @@ public List<String> allTitles() {
 }
 ```
 
-### ```flatMap``` and ```distinct```
+### ```flatMap``` e ```distinct```
 
-Other way to convert things is to use Flatmaps. It behaves the same as map does, but it will return zero or more occurrencies. The code below uses the flatMap in the stream chain:
+Outra maneira de converter objetos é usar Flatmaps. O comportamento é parecido com o do map, mas retornará zero ou mais ocorrências. O código abaixo ilustra o uso de Flatmaps:
 
 ```java
 public List<StarWarsCharacter> allCharacters() {
@@ -202,27 +202,27 @@ public List<StarWarsCharacter> allCharacters() {
 }
 ```
 
-That means that in the end there will be a list of distinct characters of all movies. If a movie has no charaters, nothing will be added (in the case of the Qatsi trilogy).
+O código retorna uma lista de todos os personagens de todos os filmes distintamente. Se um filme não possui personagens, nada será adicionado (como é o caso dos filmes da trilogia Qatsi). Star Wars possui muitos personagens memoráveis e a lista de personagens nunca retornará vazia.
 
-Chaining ```distinct()``` will build a list without repetition. To make this possible it's required to implement ```hashCode()``` and ```equals()``` methods to better accuracy on the results.
+Encadeando ```distinct()``` irá resultar em uma lista sem repetições. Para isso ser possível, o desenvolvedor deve implementar os métodos ```hashCode()``` e ```equals()``` com o intuito de obter melhores resultados.
 
-That's simple and fun! Another way to implement a custom function is to create a custom interface function using the ```@FunctionalInterface``` annotation. As the examples of this articles are not that complex, it'll not be used here.
+Simples e divertido! Outra maneira de implementar uma função customizada é criar uma interface anotada com ```@FunctionalInterface```. Como os exemplos desse artigo não possui muitos exemplos complexos, não há exemplo desse recurso.
 
-Check the implemented examples on the ```org.starlambdawars.mapper``` package. Try to implement a function to retrieve other informations from the dataset.
+Veja os exemplos implementados no pacote ```org.starlambdawars.mapper```. Tente implementar funções para obter outras informações do conjunto de dados.
 
 ## Sorters
 
-To sort something in java is the same to implement the ```java.util.Comparator``` interface. The key method in the stream chaining is the ```sort``` method.
+Quando se fala em ordenação, se pensa na interface ```java.util.Comparator```. O método chave no encadeamento de streams é o método ```sort```.
 
-It was added to the ```Comparator``` class a bunch of default methods, just make the development of a Compator easy. It'll not be discussed every default method on this article, just the ```comparing``` method.
+Foi adicionado à interface ```Comparator``` vários métodos default para deixar o desenvolvimento de um Comparator mais fácil. Não serão discutidos todos os métodos default nesse artigo, somente o método ```comparing```.
 
-### Implementing a ```Comparator```
+### Implementando um ```Comparator```
 
-It's already known the implementation of a Comparator and, because of this, it'll not be added a code snippet showing this.
+Implementar um Comparator não é uma tarefa complexa. Quem programa em Java há um tempo já deve ter implementado um. Por causa disso não será mostrada nesse artigo uma implmenetação dessa interface.
 
-There are two ways to use a Comparator: implementing using the arrow notation or using the ```comparing``` default method.
+Existem duas maneiras de usar um Comparator: implementar usando a arrow notation ou usando o método default ```comparing```.
 
-Let's implement a Comparator using the ```chronologicalOrder``` field. The chronological order will tell us what's the movie order when sorting it by the number of the episodes. The code snippet below shows this:
+Vamos implementar um Comparator usando o campo ```chronologicalOrder```. Ordenando os filmes pela ordem cronológica, colocará os episódio em ordem crescente numérica de episódios do Star Wars. Veja o código abaixo:
 
 ```java
 List<StarWarsMovie> myMovies = movies
@@ -231,13 +231,13 @@ List<StarWarsMovie> myMovies = movies
         .collect(Collectors.toList());
 ```
 
-The syntax is a bit different from the other implementation because the ```compare``` method takes two parameters, just as if it was implemented.
+A síntaxe é um pouco difereten de outras implementações, pois o método ```compare``` necessita de dois parâmetros, assim como se fosse implementada.
 
-### Using a ```Comparator```
+### Usando um ```Comparator```
 
-In the ```Comparator``` class, there are a bunch of static methods that can be used to avoid implementations. One of this static methods is the ```comparing``` method, that takes a ```Function``` as a parameter. It's not necessary to implement a function to make use of this method, just use the double-colon (```::```) notation informing the Class name and the method name, like this: ```Class::method```. It'll convert into a function returning the method return.
+Na interface ```Comparator``` existem vários métodos de classe que podem ser utilizados para evitar implementações desnecessárias. Um desses métodos é o método ```comparing```, que espera um objeto do tipo ```Function``` como parâmetro. Não é necessário implementar uma função para utilizá-lo, pode ser utilizada a notação double-colon (```::```) informando a classe e o nome do método, exemplo: ```Class::method```. Isso será convertido em função.
 
-The implementation of another example, using the field ```releaseDate``` stays as follows:
+A implementação de outro exemplo, utilizando o campo ```releaseDate``` fica conforme trecho de código a seguir:
 
 ```java
 List<StarWarsMovie> myMovies = movies
@@ -246,9 +246,9 @@ List<StarWarsMovie> myMovies = movies
         .collect(Collectors.toList());
 ```
 
-### Reversing a list
+### Invertendo uma lista
 
-Following the previous example, it's simple to write a code to modify the sort order. It's needed to add only one thing: a call to ```reversed()``` method.    
+Seguindo o exemplo anterior, fica simples escrever um código para modificar a ordenação dos dados. Se faz necessário somente uma coisa: uma chamada para o método ```reversed()```.
 
 ```java
 List<StarWarsMovie> myMovies = movies
@@ -257,9 +257,9 @@ List<StarWarsMovie> myMovies = movies
         .collect(Collectors.toList());
 ```
 
-This makes easy to sort a collection.
+Com isso, ordenar dados fica fácil!
 
-Check the ```org.starlambdawars.sorter``` package to see the examples implemented with the Comparator to sort data. Modify the ```personalOrder``` field in the data file to see what outputs in the ```personalOrderSorting()``` method.   
+Veja o pacote ```org.starlambdawars.sorter``` para ver os exemplos implementados com Comparator para odenar dados. Modifique o campo ```personalOrder``` no arquivo de dados para ver qual o output do método ```personalOrderSorting()```.
 
 ## Collectors
 
