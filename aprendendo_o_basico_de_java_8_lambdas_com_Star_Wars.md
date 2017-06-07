@@ -263,19 +263,17 @@ Veja o pacote ```org.starlambdawars.sorter``` para ver os exemplos implementados
 
 ## Collectors
 
-All the examples ends with a call to the ```collect``` method. This is a special method that closes the ```Stream``` opened by the ```stream()``` method and reduces the stream to a collection.
+Todos os exemplos terminam com uma chamada ao método ```collect```. Este é um método especial que encerra o ```Stream``` aberto pelo método ```stream()``` reduzindo para uma coleção.
 
-There is a class that makes things easy to use this method, that is the ```Collectors``` class. The main three methods in this class are:
+Existe uma classe que facilita o uso desse método que é a classe utilitária ```Collectors```. Os três principais métodos dessa classe são:
 
-1. ```toList``` that creates a list
-2. ```toSet``` that creates a set
-3. ```toMap``` that creates a map
+1. ```toList``` que cria um ```List```
+2. ```toSet``` que cria um ```Set```
+3. ```toMap``` que cria um ```Map```
 
-### ```toList``` and ```toSet```
+### ```toList``` e ```toSet```
 
-They are easy. Just call it and will result in a list or a set. But remember: sets are lists that repetitions are not allowed. So, just remember to implement ```equals``` and ```hashCode``` methods of the containing class before use.
-
-The following code snippet shows a ```toList``` Collectors call:
+Estes são métodos fáceis de usar. É só chamar um dos dois que irá resultar em um ```List``` ou um ```Set```. Mas lembre-se: ```Set``` é um tipo de coleção que **não** permite repetição, então, é necessário de implementar os métodos ```equals``` e ```hashCode``` na classe parametrizada antes de usar esses dois métodos.
 
 ```java
 private List<String> findByForceAlignment(ForceAlignment alignment, List<StarWarsCharacter> characters) {
@@ -289,12 +287,12 @@ private List<String> findByForceAlignment(ForceAlignment alignment, List<StarWar
 
 ### ```toMap```
 
-Maps require two things to build: a key type and a value type. The ```toMap``` method requires at last two parameters:
+Para construir um ```Map``` são necessárias duas coisas: um tipo para a chave e um tipo para o valor. O método ```toMap``` necessita pelo menos de dois parâmetros:
 
-1. a ```Function``` that defines the key
-2. a ```Function``` that defines the value
+1. uma ```Function``` que defina a chave
+2. uma ```Function``` que defina o valor
 
-In the example below, the resulting map will have a enum key, typed by the ```ForceAlignment``` enum, and a List of the characters names as the value. First, it's needed to transform the ```StarWarsMovie``` stream into a ```ForceAlignment``` enum stream using the ```map``` function. Then it's needed to create a distinct list of them and finally call to ```collector``` to create the map.
+No exemplo a seguir, o ```Map``` resultante irá conter uma chave enum, do enum ```ForceAlignment```, e o valor será uma lista de personagens. Primeiro é preciso transformar o stream ```StarWarsMovie```em um stream de ```ForceAlignment``` usando o método ```map```. Por fim, é necessário criar um stream distinto de ```ForceAlignment``` e realizar a chamada para o método ```collect``` para criar o ```Map```.
 
 ```java
 public Map<ForceAlignment, List<String>> mapForceByCharacters() {
@@ -312,7 +310,7 @@ public Map<ForceAlignment, List<String>> mapForceByCharacters() {
 }
 ```
 
-The key will have the identiy function and it has to be written that way ```f -> f```. The value must have to return a List of String called by the method ```findByForceAlignment```. It's implementation is in the previous section.
+A chave será construída com uma função identidade que pode ser escrita como ```f -> f```. O valor deve ser uma lista de ```String``` criada pelo método ```findByForceAlignment```. A implementação do mesmo está na seção anterior.
 
 ## ```forEach```
 
