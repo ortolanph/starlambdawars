@@ -37,7 +37,9 @@ public class StarWarsFilterExample {
 
         movies
                 .stream()
-                .filter(the80s.and(lukeSkywalker().and(m -> m.getDirector().equals("Irvin Kershner"))))
+                .filter(the80s
+                        .and(lukeSkywalker()
+                                .and(m -> m.getDirector().equals("Irvin Kershner"))))
                 .collect(Collectors.toList())
                 .forEach(m -> System.out.println(m.getTitle()));
 
