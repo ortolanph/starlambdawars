@@ -17,25 +17,37 @@ public class StarWarsFilterExample {
         DataLoader loader = new DataLoader(args[0]);
         List<StarWarsMovie> movies = loader.loadMovies();
 
-        System.out.println("Find movies directed by George Lucas with Luke SkyWalker in the 80's");
-        System.out.println("--------------------------------------------------------------------");
+        DirectorPredicate predicate = new DirectorPredicate();
+        predicate.setDirector("George Lucas");
+
+        The80sPredicate the80s = new The80sPredicate();
+
+        System.out.println("Find movies directed by Irvin Kershner with Luke SkyWalker in the 80's");
+        System.out.println("----------------------------------------------------------------------");
 
         String director = "George Lucas";
 
+//        movies
+//                .stream()
+//                .filter(m -> m.getDirector().equals("George Lucas"))
+//                .filter(lukeSkywalker())
+//                .filter(the80s)
+//                .collect(Collectors.toList())
+//                .forEach(m -> System.out.println(m.getTitle()));
+
         movies
                 .stream()
-                .filter(m -> m.getDirector().equals(director))
-                .filter(m -> m.getMainCharacters().contains(lukeSkywalker()))
-                .filter(inThe80s())
+                .filter(the80s.and(lukeSkywalker().and(m -> m.getDirector().equals("Irvin Kershner"))))
                 .collect(Collectors.toList())
                 .forEach(m -> System.out.println(m.getTitle()));
+
     }
 
-    private static StarWarsCharacter lukeSkywalker() {
+    private static Predicate<StarWarsMovie> lukeSkywalker() {
         StarWarsCharacter lukeSkywalker = new StarWarsCharacter();
         lukeSkywalker.setName("Luke Skywalker");
 
-        return lukeSkywalker;
+        return m -> m.getMainCharacters().contains(lukeSkywalker);
     }
 
     private static Predicate<StarWarsMovie> inThe80s() {

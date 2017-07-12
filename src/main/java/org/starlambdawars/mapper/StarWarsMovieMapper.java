@@ -34,8 +34,6 @@ public class StarWarsMovieMapper {
         return movies
                 .stream()
                 .map(l -> l.getMainCharacters())
-                .collect(Collectors.toList())
-                .stream()
                 .flatMap(List::stream)
                 .distinct()
                 .collect(Collectors.toList());

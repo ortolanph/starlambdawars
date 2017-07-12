@@ -27,7 +27,7 @@ public class  StarWarsMovieOderer {
     }
 
     public List<StarWarsMovie> personalOrderSorting() {
-        return createOrderedList(Comparator.comparing(StarWarsMovie::getPersonalOrder));
+        return createOrderedList(Comparator.comparingInt(StarWarsMovie::getPersonalOrder));
     }
 
     public List<StarWarsMovie> releaseOrderSortingReversed() {
