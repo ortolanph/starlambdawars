@@ -6,7 +6,7 @@ import java.util.function.Predicate;
 
 public class DirectorPredicate implements Predicate<StarWarsMovie> {
 
-    public void setDirector(String director) {
+    public DirectorPredicate(String director) {
         this.director = director;
     }
 

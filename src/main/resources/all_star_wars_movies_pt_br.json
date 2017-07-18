@@ -1,0 +1,560 @@
+[
+  {
+    "id": 1,
+    "titulo": "A New Hope",
+    "dataLancamento": "1977-05-25",
+    "diretor": "George Lucas",
+    "ordemCronologica": 5,
+    "ordemPessoal": 5,
+    "tipo": "SAGA",
+    "personagensPrincipais": [
+      {
+        "nome": "Luke Skywalker",
+        "interpretadoPor": "Mark Hamill",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Princess Leia",
+        "interpretadoPor": "Carrie Fisher",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Han Solo",
+        "interpretadoPor": "Harrison Ford",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "C3PO",
+        "interpretadoPor": "Anthony Daniels",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "R2D2",
+        "interpretadoPor": "Kenny Baker",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Chewbacca",
+        "interpretadoPor": "Peter Mayhew",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Grand Moff Tarkin",
+        "interpretadoPor": "Peter Cushing",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Obi-Wan Kenobi",
+        "interpretadoPor": "Alec Guinness",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Darth Vader",
+        "interpretadoPor": "David Prowse",
+        "alinhamentoForca": "DARK_SIDE"
+      }
+    ]
+  },
+  {
+    "id": 2,
+    "titulo": "The Empire Strikes Back",
+    "dataLancamento": "1980-05-21",
+    "diretor": "Irvin Kershner",
+    "ordemCronologica": 6,
+    "ordemPessoal": 1,
+    "tipo": "SAGA",
+    "personagensPrincipais": [
+      {
+        "nome": "Luke Skywalker",
+        "interpretadoPor": "Mark Hamill",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Princess Leia",
+        "interpretadoPor": "Carrie Fisher",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Han Solo",
+        "interpretadoPor": "Harrison Ford",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "C3PO",
+        "interpretadoPor": "Anthony Daniels",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "R2D2",
+        "interpretadoPor": "Kenny Baker",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Chewbacca",
+        "interpretadoPor": "Peter Mayhew",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Obi-Wan Kenobi",
+        "interpretadoPor": "Alec Guinness",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Darth Vader",
+        "interpretadoPor": "David Prowse",
+        "alinhamentoForca": "DARK_SIDE"
+      },
+      {
+        "nome": "Yoda",
+        "interpretadoPor": "Frank Oz",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Lando Calrissian",
+        "interpretadoPor": "Billy Dee Williams",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Boba Fett",
+        "interpretadoPor": "Jeremy Bulloch",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Darth Sidious",
+        "interpretadoPor": "Ian McDiarmid",
+        "alinhamentoForca": "DARK_SIDE"
+      },
+      {
+        "nome": "Wicket",
+        "interpretadoPor": "Warwick Davis",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "titulo": "The Return of the Jedi",
+    "dataLancamento": "1983-05-25",
+    "diretor": "Richard Marquand",
+    "ordemCronologica": 7,
+    "ordemPessoal": 4,
+    "tipo": "SAGA",
+    "personagensPrincipais": [
+      {
+        "nome": "Luke Skywalker",
+        "interpretadoPor": "Mark Hamill",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Princess Leia",
+        "interpretadoPor": "Carrie Fisher",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Han Solo",
+        "interpretadoPor": "Harrison Ford",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "C3PO",
+        "interpretadoPor": "Anthony Daniels",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "R2D2",
+        "interpretadoPor": "Kenny Baker",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Chewbacca",
+        "interpretadoPor": "Peter Mayhew",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Obi-Wan Kenobi",
+        "interpretadoPor": "Alec Guinness",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Darth Vader",
+        "interpretadoPor": "David Prowse",
+        "alinhamentoForca": "DARK_SIDE"
+      },
+      {
+        "nome": "Yoda",
+        "interpretadoPor": "Frank Oz",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Lando Calrissian",
+        "interpretadoPor": "Billy Dee Williams",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Boba Fett",
+        "interpretadoPor": "Jeremy Bulloch",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Darth Sidious",
+        "interpretadoPor": "Ian McDiarmid",
+        "alinhamentoForca": "DARK_SIDE"
+      }
+    ]
+  },
+  {
+    "id": 4,
+    "titulo": "The Phantom Manace",
+    "dataLancamento": "1999-05-19",
+    "diretor": "George Lucas",
+    "ordemCronologica": 1,
+    "ordemPessoal": 7,
+    "tipo": "SAGA",
+    "personagensPrincipais": [
+      {
+        "nome": "Obi-Wan Kenobi",
+        "interpretadoPor": "Ewan McGregor",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Qui-Gon Jin",
+        "interpretadoPor": "Liam Neeson",
+        "alinhamentoForca": "GRAY_SIDE"
+      },
+      {
+        "nome": "Jar Jar Binks",
+        "interpretadoPor": "Ahmed Best",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Queen Amidala",
+        "interpretadoPor": "Natalie Portman",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Anakin Skywalker",
+        "interpretadoPor": "Jake Lloyd",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "C3PO",
+        "interpretadoPor": "Anthony Daniels",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "R2D2",
+        "interpretadoPor": "Kenny Baker",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Senator Palpatine",
+        "interpretadoPor": "Ian McDiarmid",
+        "alinhamentoForca": "DARK_SIDE"
+      },
+      {
+        "nome": "Yoda",
+        "interpretadoPor": "Frank Oz",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Mace Windu",
+        "interpretadoPor": "Samuel L Jackson",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Darth Maul",
+        "interpretadoPor": "Ray Park",
+        "alinhamentoForca": "DARK_SIDE"
+      }
+    ]
+  },
+  {
+    "id": 5,
+    "titulo": "The Attack of the Clones",
+    "dataLancamento": "2002-05-16",
+    "diretor": "George Lucas",
+    "ordemCronologica": 2,
+    "ordemPessoal": 8,
+    "tipo": "SAGA",
+    "personagensPrincipais": [
+      {
+        "nome": "Obi-Wan Kenobi",
+        "interpretadoPor": "Ewan McGregor",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Queen Amidala",
+        "interpretadoPor": "Natalie Portman",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Anakin Skywalker",
+        "interpretadoPor": "Hayden Christensen",
+        "alinhamentoForca": "DARK_SIDE"
+      },
+      {
+        "nome": "C3PO",
+        "interpretadoPor": "Anthony Daniels",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "R2D2",
+        "interpretadoPor": "Kenny Baker",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Senator Palpatine",
+        "interpretadoPor": "Ian McDiarmid",
+        "alinhamentoForca": "DARK_SIDE"
+      },
+      {
+        "nome": "Yoda",
+        "interpretadoPor": "Frank Oz",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Mace Windu",
+        "interpretadoPor": "Samuel L Jackson",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Darth Tyranus",
+        "interpretadoPor": "Christopher Lee",
+        "alinhamentoForca": "DARK_SIDE"
+      },
+      {
+        "nome": "Jango Fett",
+        "interpretadoPor": "Temuera Morrison",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      }
+    ]
+  },
+  {
+    "id": 6,
+    "titulo": "The Revenge of the Sith",
+    "dataLancamento": "2005-05-19",
+    "diretor": "George Lucas",
+    "ordemCronologica": 3,
+    "ordemPessoal": 6,
+    "tipo": "SAGA",
+    "personagensPrincipais": [
+      {
+        "nome": "Obi-Wan Kenobi",
+        "interpretadoPor": "Ewan McGregor",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Queen Amidala",
+        "interpretadoPor": "Natalie Portman",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Anakin Skywalker",
+        "interpretadoPor": "Hayden Christensen",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Darth Vader",
+        "interpretadoPor": "Hayden Christensen",
+        "alinhamentoForca": "DARK_SIDE"
+      },
+      {
+        "nome": "C3PO",
+        "interpretadoPor": "Anthony Daniels",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "R2D2",
+        "interpretadoPor": "Kenny Baker",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Darth Sidious",
+        "interpretadoPor": "Ian McDiarmid",
+        "alinhamentoForca": "DARK_SIDE"
+      },
+      {
+        "nome": "Yoda",
+        "interpretadoPor": "Frank Oz",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Mace Windu",
+        "interpretadoPor": "Samuel L Jackson",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Darth Tyranus",
+        "interpretadoPor": "Christopher Lee",
+        "alinhamentoForca": "DARK_SIDE"
+      },
+      {
+        "nome": "Bail Organa",
+        "interpretadoPor": "Jimmy Smits",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Chewbacca",
+        "interpretadoPor": "Peter Mayhew",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "General Grievous",
+        "interpretadoPor": "Matthew Wood",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      }
+    ]
+  },
+  {
+    "id": 1,
+    "titulo": "The Force Awakens",
+    "dataLancamento": "2005-12-18",
+    "diretor": "J.J. Abrams",
+    "ordemCronologica": 7,
+    "ordemPessoal": 4,
+    "tipo": "SAGA",
+    "personagensPrincipais": [
+      {
+        "nome": "Kylo Ren",
+        "interpretadoPor": "Adam Driver",
+        "alinhamentoForca": "DARK_SIDE"
+      },
+      {
+        "nome": "Rey",
+        "interpretadoPor": "Daisy Ridley",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "BB-8",
+        "interpretadoPor": "None",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Finn",
+        "interpretadoPor": "John Boyega",
+        "alinhamentoForca": "UNKNOWN"
+      },
+      {
+        "nome": "Poe Dameron",
+        "interpretadoPor": "Oscar Isaac",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Maz Kanata",
+        "interpretadoPor": "Lupita Nyong'o",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Supreme Leader Snoke",
+        "interpretadoPor": "Andy Serkis",
+        "alinhamentoForca": "DARK_SIDE"
+      },
+      {
+        "nome": "General Hux",
+        "interpretadoPor": "Domhnall Gleeson",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Captain Phasma",
+        "interpretadoPor": "Gwendoline Christie",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Luke Skywalker",
+        "interpretadoPor": "Mark Hamill",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "General Leia Organa",
+        "interpretadoPor": "Carrie Fisher",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Han Solo",
+        "interpretadoPor": "Harrison Ford",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "C3PO",
+        "interpretadoPor": "Anthony Daniels",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "R2D2",
+        "interpretadoPor": "Kenny Baker",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Chewbacca",
+        "interpretadoPor": "Peter Mayhew",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      }
+    ]
+  },
+  {
+    "id": 8,
+    "titulo": "Rogue One",
+    "dataLancamento": "2016-12-16",
+    "diretor": "Gareth Edwards",
+    "ordemCronologica": 4,
+    "ordemPessoal": 2,
+    "tipo": "SPIN_OFF",
+    "personagensPrincipais": [
+      {
+        "nome": "Jyn Erso",
+        "interpretadoPor": "Felicity Jones",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Cassian Andor",
+        "interpretadoPor": "Diego Luna",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Orson Krennic",
+        "interpretadoPor": "Ben Mendelsohn",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Chirrut Îmue",
+        "interpretadoPor": "Donnie Yen",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Galen Erso",
+        "interpretadoPor": "Mads Mikkelsen",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "K-2SO",
+        "interpretadoPor": "Alan Tudyk",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Bodhi Rook",
+        "interpretadoPor": "Riz Ahmed",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Baze Malbus",
+        "interpretadoPor": "Jiang Wen",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Saw Gerrera",
+        "interpretadoPor": "Forest Whitaker",
+        "alinhamentoForca": "WITHOUT_FORCE"
+      },
+      {
+        "nome": "Princess Leia",
+        "interpretadoPor": "Carrie Fisher",
+        "alinhamentoForca": "LIGHT_SIDE"
+      },
+      {
+        "nome": "Darth Vader",
+        "interpretadoPor": "Daniel Naprous",
+        "alinhamentoForca": "DARK_SIDE"
+      }
+    ]
+  }
+]
