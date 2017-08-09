@@ -11,13 +11,13 @@ public class StarWarsDataFinderExample {
 
     public static void main(String[] args) throws IOException {
         DataLoader loader = new DataLoader(args[0]);
-        DirectorPredicate predicate = new DirectorPredicate();
+        DirectorPredicate predicate = new DirectorPredicate("Irvin Kershner");
         StarWarsDataFinder finder = new StarWarsDataFinder(loader, predicate);
 
-        System.out.println("Movies directed by George Lucas");
+        System.out.println("Movies directed by Irvin Kershner");
         System.out.println("-------------------------------");
         finder
-                .findMovieByDirector("George Lucas")
+                .findMovieByDirector("Irvin Kershner")
                 .forEach(m -> System.out.println(m.getTitle()));
         System.out.println();
 

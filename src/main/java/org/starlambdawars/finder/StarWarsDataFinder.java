@@ -18,7 +18,6 @@ public class StarWarsDataFinder {
     }
 
     public List<StarWarsMovie> findMovieByDirector(String director) {
-        directorPredicate.setDirector(director);
 
         return movies
                 .stream()
