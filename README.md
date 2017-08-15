@@ -1,4 +1,7 @@
 # starlambdawars
+
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+
 A java8 lambda introduction using star wars movies information.
 
 ## Compile and assemble
