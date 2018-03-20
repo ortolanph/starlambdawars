@@ -645,6 +645,11 @@
         "name": "Vice Admiral Amilyn Holdo",
         "playedBy": "Laura Dern",
         "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Rose Tico",
+        "playedBy": "Kelly Marie Tran",
+        "forceAlignment": "WITHOUT_FORCE"
       }
     ]
   }
