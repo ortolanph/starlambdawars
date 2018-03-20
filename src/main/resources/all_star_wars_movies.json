@@ -208,7 +208,7 @@
     "releaseDate": "1999-05-19",
     "director": "George Lucas",
     "chronologicalOrder": 1,
-    "personalOrder": 7,
+    "personalOrder": 8,
     "type": "SAGA",
     "mainCharacters": [
       {
@@ -274,7 +274,7 @@
     "releaseDate": "2002-05-16",
     "director": "George Lucas",
     "chronologicalOrder": 2,
-    "personalOrder": 8,
+    "personalOrder": 9,
     "type": "SAGA",
     "mainCharacters": [
       {
@@ -335,7 +335,7 @@
     "releaseDate": "2005-05-19",
     "director": "George Lucas",
     "chronologicalOrder": 3,
-    "personalOrder": 6,
+    "personalOrder": 7,
     "type": "SAGA",
     "mainCharacters": [
       {
@@ -406,12 +406,12 @@
     ]
   },
   {
-    "id": 1,
+    "id": 7,
     "title": "The Force Awakens",
-    "releaseDate": "2005-12-18",
+    "releaseDate": "2015-12-17",
     "director": "J.J. Abrams",
     "chronologicalOrder": 7,
-    "personalOrder": 4,
+    "personalOrder": 6,
     "type": "SAGA",
     "mainCharacters": [
       {
@@ -497,7 +497,7 @@
     "releaseDate": "2016-12-16",
     "director": "Gareth Edwards",
     "chronologicalOrder": 4,
-    "personalOrder": 2,
+    "personalOrder": 3,
     "type": "SPIN_OFF",
     "mainCharacters": [
       {
@@ -554,6 +554,87 @@
         "name": "Darth Vader",
         "playedBy": "Daniel Naprous",
         "forceAlignment": "DARK_SIDE"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "title": "The Last Jedi",
+    "releaseDate": "2018-12-14",
+    "director": "J.J. Abrams",
+    "chronologicalOrder": 7,
+    "personalOrder": 2,
+    "type": "SAGA",
+    "mainCharacters": [
+      {
+        "name": "Kylo Ren",
+        "playedBy": "Adam Driver",
+        "forceAlignment": "DARK_SIDE"
+      },
+      {
+        "name": "Rey",
+        "playedBy": "Daisy Ridley",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "BB-8",
+        "playedBy": "None",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Finn",
+        "playedBy": "John Boyega",
+        "forceAlignment": "UNKNOWN"
+      },
+      {
+        "name": "Poe Dameron",
+        "playedBy": "Oscar Isaac",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Maz Kanata",
+        "playedBy": "Lupita Nyong'o",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Supreme Leader Snoke",
+        "playedBy": "Andy Serkis",
+        "forceAlignment": "DARK_SIDE"
+      },
+      {
+        "name": "General Hux",
+        "playedBy": "Domhnall Gleeson",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Captain Phasma",
+        "playedBy": "Gwendoline Christie",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Luke Skywalker",
+        "playedBy": "Mark Hamill",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "General Leia Organa",
+        "playedBy": "Carrie Fisher",
+        "forceAlignment": "LIGHT_SIDE"
+      },
+      {
+        "name": "C3PO",
+        "playedBy": "Anthony Daniels",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "R2D2",
+        "playedBy": "Kenny Baker",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Chewbacca",
+        "playedBy": "Peter Mayhew",
+        "forceAlignment": "WITHOUT_FORCE"
       }
     ]
   }
