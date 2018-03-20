@@ -635,6 +635,16 @@
         "name": "Chewbacca",
         "playedBy": "Peter Mayhew",
         "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "DJ",
+        "playedBy": "Benicio Del Toro",
+        "forceAlignment": "WITHOUT_FORCE"
+      },
+      {
+        "name": "Vice Admiral Amilyn Holdo",
+        "playedBy": "Laura Dern",
+        "forceAlignment": "WITHOUT_FORCE"
       }
     ]
   }
